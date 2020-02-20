@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>斐波那契数列</title>
+</head>
+<body>
+<script>
+    document.write("<h2> Table of Fibonacci Number</h2>");
+    for (i=0,j=1,k=0,fib=0;i<50;i++,fib=j+k,j=k,k=fib){
+        document.write("Fibonacci ("+i+" ) = "+fib);
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>
