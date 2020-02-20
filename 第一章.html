@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js的特性介绍</title>
+</head>
+<body>
+<header>
+    <h1>第一章</h1>
+</header>
+<ul>
+    <li>1.6.1控制文档的外观和内容document对象-document.write()</li>
+    <li>1.6.2对浏览器的控制window对象—window.location()、window.history()</li>
+    <li>1.6.3与html表单的交互form-button、Checkbox、hidden、password、radio、reset、select、submit、text、textarea</li>
+    <li>1.6.4与用户的交互-alert</li>
+    <li>1.6.5用cookie读写用户状态</li>
+    <li>1.6.6其他特性-动画、嵌入式开发、计算、日期使用、计时器、navigator、scroll</li>
+</ul>
+
+<h3>JavaScript的局限</h3>
+<ul>
+    <li>不具备图形处理能力</li>
+    <li>不允许对文件进行读写操作</li>
+    <li>不支持任何形式联网技术</li>
+</ul>
+<h3>示例:计算借贷</h3>
+<form name="loandata">
+    <table>
+        <tr>
+            <td colspan="3">
+                <b>借贷信息：</b>
+            </td>
+        </tr>
+        <tr>
+            <td>1)</td>
+            <td>借贷金额（任意币种）：</td>
+            <td>
+                <input type="text" name="principal" size="12" onchange="calculate();">
+            </td>
+        </tr>
+        <tr>
+            <td>2)</td>
+            <td>利率：</td>
+            <td>
+                <input type="text" name="interest" size="12" onclick="calculate();">
+            </td>
+        </tr>
+        <tr>
+            <td>3)</td>
+            <td>贷款期限：</td>
+            <td>
+                <input type="text" name="years" size="12" onchange="calculate();">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="button" value="Compute" onclick="calculate();">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <b>支付信息：</b>
+            </td>
+        </tr>
+        <tr>
+            <td>4)</td>
+            <td>每月还款：</td>
+            <td><input type="text" name="payment" size="12"></td>
+        </tr>
+        <tr>
+            <td>5)</td>
+            <td>总共还款：</td>
+            <td><input type="text" name="total" size="12"></td>
+        </tr>
+        <tr>
+            <td>6)</td>
+            <td>总利息：</td>
+            <td><input type="text" name="totalinterest" size="12"></td>
+        </tr>
+    </table>
+</form>
+<script language="JavaScript">
+    function calculate() {
+        var principal = document.loandata.principal.value;
+        var interest = document.loandata.interest.value/100/12;
+        var payments = document.loandata.years.value*12;
+        var x = Math.pow(1+interest,payments);
+        var monthly = (principal*x*interest)/(x-1);
+
+        if (!isNaN(monthly) &&
+            (monthly != Number.POSITIVE_INFINITY) &&
+            (monthly != Number.NEGATIVE_INFINITY)){
+            document.loandata.payment.value = round(monthly);
+            document.loandata.total.value = round(monthly*payments);
+            document.loandata.totalinterest.value = round((monthly*payments)-principal);
+        }
+        else {
+            document.loandata.payment.value = "";
+            document.loandata.total.value = "";
+            document.loandata.totalinterest.value = "";
+        }
+    }
+
+    // 将数字舍入为两位小数
+    function round(x) {
+        return Math.round(x*100)/100;
+    }
+</script>
+
+<h3>其余部分解析</h3>
+<hr/>
+<h4>第一部分</h4>
+<ul>
+    <li>第二章-词法结构</li>
+    <li>第三章-数据类型和值</li>
+    <li>第四章-变量、作用域</li>
+    <li>第五章-表达式、运算符</li>
+    <li>第六章-语句</li>
+
+    <li>第七章-函数</li>
+    <li>第八章-对象</li>
+    <li>第九章-数组</li>
+    <li>第十章-正则表达式</li>
+    <li>javascript主题</li>
+
+</ul>
+<hr/>
+<h4>第二部分：客户端javascript</h4>
+<ul>
+    <li>第十二章-web浏览器中的javascript</li>
+    <li>第十三章-窗口和框架</li>
+    <li>第十四章-document对象</li>
+    <li>第十五章-表单和表单元素</li>
+    <li>第十六章-脚本化cookie</li>
+    <li>第十七章-文档对象模型</li>
+    <li>第十八章-级联样式表、动态html</li>
+    <li>第十九章-事件和事件处理</li>
+    <li>第二十章-兼容性</li>
+    <li>第二十一章-javascript的安全性</li>
+    <li>第二十二章-javascript中使用java</li>
+</ul>
+<hr/>
+<h4>第三四五部分-参考手册</h4>
+</body>
+</html>
