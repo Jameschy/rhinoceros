@@ -5,118 +5,123 @@
     <title>数据类型和值</title>
 </head>
 <body>
+
 <header>
     <h1>第三章-数据类型和值</h1>
 </header>
-<ul>
-    <li>三种基本数据类型-数字（number）、文本（string）、布尔值（boolean）</li>
-    <li>两种小数据类型-空（null）、未定义（undefined）</li>
-    <li>复合数据类型：对象（object）
-        <ul>
-            <li>已命名的值的无序集合</li>
-            <li>有编号的值的有序集合=数组</li>
-            <li>具有可执行代码的对象=函数-特殊对象</li>
-            <li>其他专用对象：新的对象类（class）</li>
-        </ul>
-    </li>
+<div>
+    <ul>
+        <li>三种基本数据类型-数字（number）、文本（string）、布尔值（boolean）</li>
+        <li>两种小数据类型-空（null）、未定义（undefined）</li>
+        <li>复合数据类型：对象（object）
+            <ul>
+                <li>已命名的值的无序集合</li>
+                <li>有编号的值的有序集合=数组</li>
+                <li>具有可执行代码的对象=函数-特殊对象</li>
+                <li>其他专用对象：新的对象类（class）</li>
+            </ul>
+        </li>
+        <ul/>
 
-<ul/>
-<p><b>3.1数字（number）</b></p>
-<ul>
-    <li>和其他程序设计语言不同，并不区分整数型和浮点型数值</li>
-    <li>JavaScript中所有数字都是浮点型表示</li>
-    <li>采用IEEE754标准定义的64位浮点格式，有最大值和最小值</li>
-    <li>
-        数值直接量的形式：
+
+        <p><b>3.1数字（number）</b></p>
         <ul>
-            <li>整型直接量</li>
-            <li>八进制和十六进制的直接量</li>
-            <li>浮点型直接量</li>
-            <li>使用：
-                <ul>
-                    <li>基本算术运算：直接通过+-*%</li>
-                    <li>大量算术运算：使用Math对象属性</li>
-                    <li>toSting()可将数字（2-36）转为二进制表示；直接调用数值使用该法，必须加括号；</li>
-                </ul>
-            </li>
+            <li>和其他程序设计语言不同，并不区分整数型和浮点型数值</li>
+            <li>JavaScript中所有数字都是浮点型表示</li>
+            <li>采用IEEE754标准定义的64位浮点格式，有最大值和最小值</li>
             <li>
-                特殊的数值：
+                数值直接量的形式：
                 <ul>
-                    <li>超出JavaScript表示的最大值表示为Infinity；反之为-Infinity</li>
-                    <li>0/0会产生未定义的结果输出为NaN；需要isNaN()来检测；isFinite()检测一个数字是否为NaNcy、+无穷、-无穷</li>
-                </ul>
+                    <li>整型直接量</li>
+                    <li>八进制和十六进制的直接量</li>
+                    <li>浮点型直接量</li>
+                    <li>使用：
+                        <ul>
+                            <li>基本算术运算：直接通过+-*%</li>
+                            <li>大量算术运算：使用Math对象属性</li>
+                            <li>toSting()可将数字（2-36）转为二进制表示；直接调用数值使用该法，必须加括号；</li>
+                        </ul>
+                    </li>
+                    <li>
+                        特殊的数值：
+                        <ul>
+                            <li>超出JavaScript表示的最大值表示为Infinity；反之为-Infinity</li>
+                            <li>0/0会产生未定义的结果输出为NaN；需要isNaN()来检测；isFinite()检测一个数字是否为NaNcy、+无穷、-无穷</li>
+                        </ul>
 
+                    </li>
+                </ul>
             </li>
         </ul>
-    </li>
-</ul>
 
-<hr/>
-<p><b>3.2字符串</b></p>
-<ul>
-    <li>由单引号或双引号包括的unicode字符序列</li>
-    <li>字符串直接量必须写在一行，换行会被截断，必须换行需要使用\n</li>
-    <li>引号必须使用英文形式</li>
-    <li>字符串中含有英文反引号，需要加\隔离，否则被隔断</li>
-    <li>同时使用JavaScript和HTML时，最好对JavaScript采用一种引用方式，对HTML使用另一种引用方式</li>
-    <li>字符串直接量的转义序列
+        <hr/>
+        <p><b>3.2字符串</b></p>
         <ul>
-            <li>\表示在字符串中无法出现的字符</li>
-            <li>\n 换行-（\u000A）......等13个</li>
-            <li>\#=#</li>
+            <li>由单引号或双引号包括的unicode字符序列</li>
+            <li>字符串直接量必须写在一行，换行会被截断，必须换行需要使用\n</li>
+            <li>引号必须使用英文形式</li>
+            <li>字符串中含有英文反引号，需要加\隔离，否则被隔断</li>
+            <li>同时使用JavaScript和HTML时，最好对JavaScript采用一种引用方式，对HTML使用另一种引用方式</li>
+            <li>字符串直接量的转义序列
+                <ul>
+                    <li>\表示在字符串中无法出现的字符</li>
+                    <li>\n 换行-（\u000A）......等13个</li>
+                    <li>\#=#</li>
+                </ul>
+            </li>
+            <li>字符串的使用</li>
         </ul>
-    </li>
-    <li>字符串的使用
 
-    </li>
-</ul>
+        <hr/>
+        <p><b>3.3 空白符和换行符</b></p>
+        <ul>
+            <li>javascript会忽略程序中记号（token）之间的空格、制表符、换行符</li>
+            <li>记号就是一个关键字、变量名、数字、函数名或其他实体</li>
+            <li>js命名必须统一，注意关键字必须使用小写</li>
+        </ul>
 
-<hr/>
-<p><b>3.3 空白符和换行符</b></p>
-<ul>
-    <li>javascript会忽略程序中记号（token）之间的空格、制表符、换行符</li>
-    <li>记号就是一个关键字、变量名、数字、函数名或其他实体</li>
-    <li>js命名必须统一，注意关键字必须使用小写</li>
-</ul>
+        <hr/>
+        <p><b>3.4 可选的分号</b></p>
+        <ul>
+            <li>javascript语句如果处在不同行，可以省略分号；否则需要带上</li>
+            <li>在return、break、continue等语句使用时，必须注分号的正确使用</li>
+            <li>js命名必须统一，注意关键字必须使用小写</li>
+        </ul>
 
-<hr/>
-<p><b>3.4 可选的分号</b></p>
-<ul>
-    <li>javascript语句如果处在不同行，可以省略分号；否则需要带上</li>
-    <li>在return、break、continue等语句使用时，必须注分号的正确使用</li>
-    <li>js命名必须统一，注意关键字必须使用小写</li>
-</ul>
+        <hr/>
+        <p><b>3.5 注释</b></p>
+        <ul>
+            <li>和java一样，支持c++和c型注释</li>
+            <li>注意单行注释“//”和多行注释“/**/”</li>
+        </ul>
 
-<hr/>
-<p><b>3.5 注释</b></p>
-<ul>
-    <li>和java一样，支持c++和c型注释</li>
-    <li>注意单行注释“//”和多行注释“/**/”</li>
-</ul>
+        <hr/>
+        <p><b>3.6 直接量（literal）,直接显示出来的值-第三章</b></p>
+        <ul>
+            <li>数字、字符串、布尔值、正则表达式、不存在对象</li>
+            <li>记号就是一个关键字、变量名、数字、函数名或其他实体</li>
+            <li>js命名必须统一，注意关键字必须使用小写</li>
+        </ul>
 
-<hr/>
-<p><b>3.6 直接量（literal）,直接显示出来的值-第三章</b></p>
-<ul>
-    <li>数字、字符串、布尔值、正则表达式、不存在对象</li>
-    <li>记号就是一个关键字、变量名、数字、函数名或其他实体</li>
-    <li>js命名必须统一，注意关键字必须使用小写</li>
-</ul>
+        <hr/>
+        <p><b>3.7 标识符（identifier），命名的变量和函数</b></p>
+        <ul>
+            <li>命名规则和java一样</li>
+            <li>第一个必须是字母、下划线、或美元符</li>
+            <li>标识符不能和javascript中的关键词同名</li>
+        </ul>
 
-<hr/>
-<p><b>3.7 标识符（identifier），命名的变量和函数</b></p>
-<ul>
-    <li>命名规则和java一样</li>
-    <li>第一个必须是字母、下划线、或美元符</li>
-    <li>标识符不能和javascript中的关键词同名</li>
-</ul>
-
-<hr/>
-<p><b>3.8 保留字</b></p>
-<ul>
-    <li>break、do、if、switch、typeof、case、else、in、this、var、catch、false、instanceof、throw、void、continue、finally、new、true、while、default、for、null、try、with、delete、function、return</li>
-    <li>扩展的保留字：Boolen、double、goto、static、package、class、char等31个</li>
-    <li>可使用但不建议的as、is、namespace、use</li>
-    <li>避免使用的其他标识符：Array、Error、isNaN、String、Date等30个</li>
-</ul>
+        <hr/>
+        <p><b>3.8 保留字</b></p>
+        <ul>
+            <li>
+                break、do、if、switch、typeof、case、else、in、this、var、catch、false、instanceof、throw、void、continue、finally、new、true、while、default、for、null、try、with、delete、function、return
+            </li>
+            <li>扩展的保留字：Boolen、double、goto、static、package、class、char等31个</li>
+            <li>可使用但不建议的as、is、namespace、use</li>
+            <li>避免使用的其他标识符：Array、Error、isNaN、String、Date等30个</li>
+        </ul>
+    </ul>
+</div>
 </body>
 </html>
