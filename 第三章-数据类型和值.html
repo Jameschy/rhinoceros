@@ -69,60 +69,141 @@
                     <li>\#=#</li>
                 </ul>
             </li>
-            <li>字符串的使用</li>
-        </ul>
-
-        <hr/>
-        <p><b>3.3 空白符和换行符</b></p>
-        <ul>
-            <li>javascript会忽略程序中记号（token）之间的空格、制表符、换行符</li>
-            <li>记号就是一个关键字、变量名、数字、函数名或其他实体</li>
-            <li>js命名必须统一，注意关键字必须使用小写</li>
-        </ul>
-
-        <hr/>
-        <p><b>3.4 可选的分号</b></p>
-        <ul>
-            <li>javascript语句如果处在不同行，可以省略分号；否则需要带上</li>
-            <li>在return、break、continue等语句使用时，必须注分号的正确使用</li>
-            <li>js命名必须统一，注意关键字必须使用小写</li>
-        </ul>
-
-        <hr/>
-        <p><b>3.5 注释</b></p>
-        <ul>
-            <li>和java一样，支持c++和c型注释</li>
-            <li>注意单行注释“//”和多行注释“/**/”</li>
-        </ul>
-
-        <hr/>
-        <p><b>3.6 直接量（literal）,直接显示出来的值-第三章</b></p>
-        <ul>
-            <li>数字、字符串、布尔值、正则表达式、不存在对象</li>
-            <li>记号就是一个关键字、变量名、数字、函数名或其他实体</li>
-            <li>js命名必须统一，注意关键字必须使用小写</li>
-        </ul>
-
-        <hr/>
-        <p><b>3.7 标识符（identifier），命名的变量和函数</b></p>
-        <ul>
-            <li>命名规则和java一样</li>
-            <li>第一个必须是字母、下划线、或美元符</li>
-            <li>标识符不能和javascript中的关键词同名</li>
-        </ul>
-
-        <hr/>
-        <p><b>3.8 保留字</b></p>
-        <ul>
-            <li>
-                break、do、if、switch、typeof、case、else、in、this、var、catch、false、instanceof、throw、void、continue、finally、new、true、while、default、for、null、try、with、delete、function、return
+            <li>字符串的使用
+                <ul>
+                    <li>以+拼接</li>
+                    <li>以变量 s.length获取长度</li>
+                    <li>以变量 s.charAt(s.length-1)获取最后一个字符</li>
+                    <li>以s.substring(1,4)获取第234个字符</li>
+                    <li>以s.indexOf('a')查询a的位置</li>
+                </ul>
             </li>
-            <li>扩展的保留字：Boolen、double、goto、static、package、class、char等31个</li>
-            <li>可使用但不建议的as、is、namespace、use</li>
-            <li>避免使用的其他标识符：Array、Error、isNaN、String、Date等30个</li>
         </ul>
 
+        <hr/>
+        <p><b>3.3 布尔值</b></p>
+        <ul>
+            <li>只有true和false两个</li>
+            <li>true等价1，false等价0</li>
+        </ul>
 
+        <hr/>
+        <p><b>3.4 函数</b></p>
+        <ul>
+            <li>可执行的代码段，一次定义多次调用</li>
+            <li>javascript中函数是一个真正的数据类型</li>
+            <li>可被存储在变量、数组、对象中</li>
+            <li>函数直接量
+                <ul>
+                    <li>函数直接量是用关键字function后加可选函数名、括号参数列表、花括号函数体定义的</li>
+                    <li>函数定义法 function square(x){return x*x}</li>
+                    <li>函数直接量定义(拉姆达函数) var square = function(x){return x*x}【重要】</li>
+                    <li>拙劣的定义法 var square = new Function("x","return x*x;");通常无用</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr/>
+        <p><b>3.5 对象（object）</b></p>
+        <ul>
+            <li>已命名的数据集合</li>
+            <li>已命名的数据作为对象属性（对象的域）</li>
+            <li>要引用一个对象的属性就必须引用对象，在后加点和属性名，例如img.width</li>
+            <li>属性可以是任何类型的数据包括数组、函数、以及其他对象</li>
+            <li>js对象可作为关联数组使用，能将任意的数据值和任意的字符串关联起来，访问使用img["width"]【重要】</li>
+            <li>创建对象
+                <ul>
+                    <li>var o = new Object();</li>
+                    <li>var now = new Date();</li>
+                    <li>var parrten = new RegExp("\\sjava\\s","i");</li>
+                </ul>
+            </li>
+            <li>对象直接量
+                <ul>
+                    <li>属性值不必是常量，可以是任意的javascript表达式</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr/>
+        <p><b>3.6 数组（array）</b></p>
+        <ul>
+            <li>和对象一样是数值的集合</li>
+            <li>和对象不同的是对象每个数值都有一个名字，数组每个数值都有一个数字（下标）</li>
+            <li>获取数组的值，使用arr[i],i从0开始，非负</li>
+            <li>数组可以存放任何一种javascript数据类型，包括对其他数组对象或函数的引用</li>
+            <li>常规数组以数字为下标，关联数组以字符串为下标</li>
+            <li>数组的创建
+                <ul>
+                    <li>使用构造函数Array()来创建数组；var a =new Array()</li>
+                    <li>或者创建、初始化一体形式，var a = new Array(1.02,"js",true,{x:1,y:2});</li>
+                    <li>创建10个未定义的新数组，var ar = new Array(10);</li>
+                </ul>
+            </li>
+            <li>数组直接量
+                <ul>
+                    <li>创建和初始化可以直接实现，var a = [1.2,"js",true,{x:1,y:2}]</li>
+                    <li>数组直接量也可以嵌套 var c = [[1,2,3],[2,4,6]];</li>
+                    <li>数组直接量元素不限于常量，可以是任意的表达式</li>
+                    <li>数组直接量可以存放未定义的元素，使用，省去即可，var aa=[1,,,5]</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr/>
+        <p><b>3.7 null</b></p>
+        <ul>
+            <li>是对象类型的一个特殊的值，表示无值，无对象</li>
+            <li>有别于其他所有的值</li>
+            <li>如果一个变量的值是null，即表示它的值不是有效的对象、数组、数字、字符串、布尔值</li>
+        </ul>
+
+        <hr/>
+        <p><b>3.8 undefined</b></p>
+        <ul>
+            <li>使用了一个并未声明的变量时，</li>
+            <li>使用了已经声明但尚未赋值的变量时，</li>
+            <li>使用一个并不存在的对象属性时</li>
+            <li>undefined和null值不同，但==将两者看做相等，例如nt.pro==null</li>
+            <li>区分undefined和null，可以使用===或typeof</li>
+            <li>无法确认实现有变量undefined，可以声明但不初始化即可 var undefined;</li>
+        </ul>
+
+        <hr/>
+        <p><b>3.9 Date对象</b></p>
+        <ul>
+            <li>日期和时间并不属于以上的基本类型</li>
+            <li>可以使用new 和构造函数Date()，来创建date对象，</li>
+            <li>Date对象还定义了函数，可将日期转为毫秒</li>
+        </ul>
+
+        <hr/>
+        <p><b>3.10 正则表达式</b></p>
+        <ul>
+            <li>用于匹配、查找、替换</li>
+            <li>用RegExp对象表示，可使用RegExp()构造函数来创建</li>
+            <li>和Date一样，不属于基本数据类型，但所有javascript实现都支持的特殊对象类型【重要】</li>
+            <li>与Date不同，RegExp有直接量语法</li>
+            <li>表达式语法复杂</li>
+        </ul>
+
+        <hr/>
+        <p><b>3.11 Error对象</b></p>
+        <ul>
+            <li>发生错误时，解释器会抛出某个类的对象，每个Error对象含有一个message属性，表示该错误的信息</li>
+            <li>使用throw、try语句</li>
+            <li>预定义错误对象类型有Error、EvalError、RangeError、ReferenceError、SyntaxError、TypeError、URIError</li>
+        </ul>
+
+        <hr/>
+        <p><b>3.12 基本数据类型的包装对象</b></p>
+        <ul>
+            <li>javascript可以灵活的将一种类型的值转换为另一种类型</li>
+            <li>在对象环境中使用字符串时，javascript会为字符串内部创建一个string包装对象</li>
+            <li>访问一个字符串长度时，s.length；String对象瞬时存在，即为瞬态对象转换</li>
+            <li>如果需要显式使用String，必须创建非瞬态对象，使用var S = new String('hello');</li>
+            <li>使用String对象时，用+操作符，会有一个瞬态的基本字符串被创建，便于执行字符串拼接</li>
+        </ul>
     </ul>
 </div>
 </body>
