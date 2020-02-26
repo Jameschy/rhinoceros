@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第四章变量 variable</title>
+</head>
+<body>
+<header>
+    <h1>第四章-变量</h1>
+</header>
+
+<hr/>
+<p><b>4.1 变量的类型</b></p>
+<ul>
+    <li>javascript变量可以存放任何类型的值</li>
+    <li>必要时，javascript可以快速自动的将一种类型值转为另一种类型</li>
+    <li>java C++变量只能存放所声明的特定类型的值</li>
+    <li>java C++编写复杂、精确，javascript编写简短、灵活</li>
+</ul>
+
+<hr/>
+<p><b>4.2 变量的声明</b></p>
+<ul>
+    <li>使用变量前，必须先声明，使用关键字var</li>
+    <li>可以单独声明var a；var b；或一次性声明：var a，b</li>
+    <li>声明和初始化一体化；var msg = "hello"，a=1，j=0；</li>
+    <li>声明了变量，未赋值，赋值该变量前初始值为undefined</li>
+    <li>作为for、in语句一部分</li>
+    <li>使用delete运算符删除变量，会引发错误</li>
+    <li>重复声明、遗漏声明
+        <ul>
+            <li>重复声明使用最新的赋值</li>
+            <li>读未声明的变量，会生成错误，给未声明的变量赋值，会被隐式转换，当做全局变量</li>
+            <li>防止在创建局部变量时，创建了全局变量，必须在函数体内使用var语句</li>
+            <li>无论全局变量还是局部变量，最好使用var创建</li>
+        </ul>
+    </li>
+</ul>
+
+<hr/>
+<p><b>4.3 变量的作用域（scope）</b></p>
+<ul>
+    <li>全局（global）变量的作用域是全局性的，处处有定义</li>
+    <li>局部（local）变量，函数之内声明的变量，只在函数体内部有定义，作用是局部的</li>
+    <li>函数的参数也是局部变量，只在函数体内有定义</li>
+    <li>函数体内部，局部变量优先级高于同名的全局变量，如局部变量名称同于全局变量，则全局变量会被隐藏</li>
+    <li>全局变量可以不使用var语句，但局部必须使用</li>
+    <li>没有块级作用域</li>
+    <li>
+        <pre>
+        <code style="color: #333333">
+            var a ="hello";
+            function f() {
+                console.log(a);//输出undefied
+                var a = "world";
+                console.log(a);//输出 world
+            }
+        </code>
+        </pre>
+        <span>等价于</span>
+        <pre>
+        <code style="color: #333333">
+            function f() {
+                var a;
+                console.log(a);//输出undefied
+                var a = "world";
+                console.log(a);//输出 world
+            }
+        </code>
+        </pre>
+    </li>
+    <li>未定义的变量和未赋值的变量
+        <ul>
+            <li>读取未声明的变量会引起错误</li>
+            <li>给未声明的变量赋值不会引起错误</li>
+            <li>已经声明但未赋值的变量，会得到默认值undefined</li>
+            <li>
+                <pre>
+                <code style="color: #333333">
+                    var x;          //undefined
+                    console.log(s)  //error
+                    w = 3           //创建为全局变量
+                </code>
+                </pre>
+            </li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
