@@ -72,9 +72,149 @@
 <p><b>5.3 算数运算符</b></p>
 <ul>
     <li>加法运算符，对数字进行算数加法运算，对字符串进行拼接，如果其中一个为对象，则会将对象转为数字或字符串，通过valueof或toString 执行</li>
-    <li></li>
+    <li>减法、乘法、除法运算符，非数字会被转为数字处理</li>
+    <li>模运算符%，%</li>
+</ul>
+
+<hr/>
+<p><b>5.4 相等运算符</b></p>
+<ul>
+    <li>"="赋值，"=="等于，"==="完全等同</li>
+    <li>避免版本问题，script标签内，language不可使用javascript1.2</li>
+    <li>!=（不等运算符，两个值相等返回false），！==（不等同运算符，两个值完全相等返回false），</li>
 </ul>
 
 
+
+<hr/>
+<p><b>5.5 关系运算符</b></p>
+<ul>
+    <li><,>,<=,>=</li>
+    <li>字符串比较时，所有大写字母小于所有小写字母</li>
+    <li>in运算符，要求左边的元是一个字符串或可以被转为字符串，右边的元是对象或数组</li>
+    <li>
+         <pre>
+                in运算符
+                <code style="color: #333333">
+                    var point = {x:1,y:1};          //定义个对象
+                    var has_x_coord = 'x' in point; //true
+                    var has_y_coord = 'y' in point; //true
+                    var has_z_coord = 'z' in point; //false，不是point的维点
+                </code>
+        </pre>
+    </li>
+    <li>
+         <pre>
+                instandceof运算符，要求左边的元是一个对象，右边的元是对象类的名，左边对象是右边类的实例，则为false；如果右边元不是对象，返回错误
+                <code style="color: #333333">
+                    var d = new Date();          //定义个对象
+                    d instandceof Date;          //true
+                    d instandceof Object         //true
+                    d instandceof Number         //false
+                    var a = [1,2,3]              //数组直接量法创建数组
+                    a instanceof Array           //true a是一个数组
+                    a instanceof Object           //true 数组也是个对象
+                    a instanceof RegExp           //false 数组不是正则
+                </code>
+        </pre>
+    </li>
+
+</ul>
+
+<hr/>
+<p><b>5.6 字符串运算符</b></p>
+<ul>
+    <li>数字字符串与数字+运算时，会将数字转为字符串再拼接，等于两个字符串拼接运算</li>
+    <li>字母比较，使用的是Unicode字符编码</li>
+    <li>+运算在字符串和数字综合运算时；结果依赖操作执行的顺序
+        <pre>
+            <code style="color: #333333">
+                 var s = 1+2+'hello'; //"3 hello";
+                 var s = 'hello' + 1 + 2; //"hello 12";
+            </code>
+        </pre>
+    </li>
+</ul>
+
+
+<hr/>
+<p><b>5.7 逻辑运算符</b></p>
+<ul>
+    <li>&&，与AND；两元为true即为true；</li>
+    <li>||，或OR；两元一者为true即为true</li>
+    <li>使用&&和||时，右边运算应避免产生副作用（赋值、递增、递减、函数调用）</li>
+    <li>！，非，对布尔值取反</li>
+</ul>
+
+<hr/>
+<p><b>5.8 位运算符</b></p>
+
+<hr/>
+<p><b>5.9 赋值运算符</b></p>
+
+<hr/>
+<p><b>5.10 其他运算符</b></p>
+<ul>
+    <li>条件运算符；？：（三元运算）
+        x>0 ? x*y : -x*y,如果x>0为true，则执行x*y；否则执行-x*y；
+        <pre>
+            <code style="color: #333333">
+               greeting = 'hello' + (username != null ? username:'there');
+                //等价
+                greeting = hello；
+                if (username != null)
+                    greeting += username;
+                else
+                    greeting += 'there';
+            </code>
+        </pre>
+    </li>
+
+    <li>typeof 运算符-数据类型检测 </li>
+    <li>对象创建运算符 New
+        <pre>
+            <code style="color: #333333">
+                o = new Object;
+                d = new Date();
+                c = new Rectangle(3.0, 4.0, 1.5, 2.75);
+                obj[i] = new constructors[i]();
+            </code>
+        </pre>
+    </li>
+    <li>delete运算符
+        <pre>
+            <code style="color: #333333">
+                var o = {x:1, y:2};
+                delete o.x;             //true;
+                typeof o.x;             //undefined
+                delete o.x;             //true
+                delete o;               //不能删除未声明变量，false
+                delete 1;               //不能删除数字
+            </code>
+        </pre>
+    </li>
+
+    <li>void运算符
+        <pre>
+            <code style="color: #333333">
+                <a href="javascript:void window.open();">打开新窗口</a>
+            </code>
+        </pre>
+    </li>
+
+    <li>逗号运算符：个别环境使用，一般出现在表达式的地方计算几个不同的表达式才使用，只和for语句联合使用
+    </li>
+    <li>数组和对象的存取运算符；使用[]来存取数组的元素；使用.来存取对象的元素</li>
+    <li>函数调用运算符
+        <pre>
+            <code style="color: #333333">
+                document.close();
+                Math.sin(x);
+                alert('hello'+name);
+                Date.UTC(2000,11,31,23,59,59)               //978307199000
+            </code>
+        </pre>
+    </li>
+</ul>
 </body>
 </html>
