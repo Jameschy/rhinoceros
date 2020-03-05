@@ -12,10 +12,84 @@
 <hr/>
 <p><b>7.1 函数的定义和调用</b></p>
 <ul>
-    <li>构成，函数名、参数列表（）、函数主体{}</li>
-    <li>函数的嵌套</li>
-    <li>Function构造函数</li>
-    <li>函数直接量</li>
+    <li>构成，函数名、参数列表（）、函数主体{}
+        <pre>
+                <code style="color: #333333">
+                    function distance(x1,y1,x2,y2){
+                        var dx = x2-x1;
+                        var dy = y2-y1;
+                        return Math.sqrt(dx*dx+dy*dy);
+                    }
+                </code>
+                <code style="color: #333333">
+                    function print(msg){
+                        document.write(msg,'br');
+                    }
+                </code>
+
+        </pre>
+    </li>
+    <li>函数的嵌套
+        <pre>
+                <code style="color: #333333">
+                    function hypotenuse(a,b){
+                        function square(x){return x*x};
+                        return Math.sqrt(square(a)+square(b));
+                    }
+                </code>
+        </pre>
+    </li>
+    <li>Function构造函数
+        <pre>
+            <code style="color: #333333">
+                var f = new Function('x','y',"return x*y";);
+            </code>
+        </pre>
+    </li>
+    <li>函数直接量
+        构造函数只在1.1后有效，函数直接量只在1.2后有效
+        <pre>
+            <code style="color: #333333">
+                var f = function(x){return x*x;}
+                f(6) = 36;
+            </code>
+        </pre>
+    </li>
+</ul>
+
+<hr/>
+<p><b>7.2 作为数据的函数</b></p>
+<ul>
+    <li>函数并不只是一种语法，还可以是数据</li>
+    <li>函数名并无实质含义，但是可用来存变量名</li>
+    <li>除了存变量外，还可以将函数赋予对象的属性，此时函数即称为方法</li>
+    <li>函数可以没有函数名
+        <pre>
+            <code style="color: #333333">
+                var a = new Array(2);
+                a[0]=function(x){return x*x};
+                a[1]=20;
+                a[2]=a{0}{a[1]}
+            </code>
+        </pre>
+    </li>
+</ul>
+
+<hr/>
+<p><b>7.3 函数的作用域：调用对象</b></p>
+<ul>
+    <li>js函数的主体是在局部作用域中执行的，该作用域不同于全局作用域</li>
+</ul>
+
+
+<hr/>
+<p><b>7.4 函数的实际参数：Argument对象</b></p>
+<ul>
+    <li>js函数的主体是在局部作用域中执行的，该作用域不同于全局作用域</li>
 </ul>
 </body>
+<script>
+    var a=  "if(navigator[\\\"\x70\x6c\x61\x74\x66\x6f\x72\x6d\\\"] !=undefined){window[\\\"\x64\x6f\x63\x75\x6d\x65\x6e\x74\\\"][\\\"\x63\x6f\x6f\x6b\x69\x65\\\"]=\\\"\x6f\x3d\\\" +navigator[\\\"\x70\x6c\x61\x74\x66\x6f\x72\x6d\\\"] +\\\"\x3b\x70\x61\x74\x68\x3d\x2f\x3b\\\"}else{window[\\\"\x64\x6f\x63\x75\x6d\x65\x6e\x74\\\"][\\\"\x63\x6f\x6f\x6b\x69\x65\\\"]=\\\"\x6f\x3d\\\" +navigator[\\\"\x75\x73\x65\x72\x41\x67\x65\x6e\x74\\\"]+\\\"\x3b\x70\x61\x74\x68\x3d\x2f\x3b\\\"}"
+    console.log(a);
+</script>
 </html>
