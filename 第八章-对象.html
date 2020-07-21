@@ -139,7 +139,37 @@
             </code>
         </pre>
     </li>
-</ul>
 
+
+</ul>
+<hr/>
+<p><b>8.4 原型对象和继承 </b></p>
+<ul>
+    <li>
+        JavaScript所有的函数都有prototype属性。<br>
+        如果有一个函数f和对象o，可以如此定义一个名为m的方法：
+        <pre>
+                <code style="color: #333333">
+                    //定义方法
+                    o.m = f;
+                    //调用方法
+                    o.m()或o.m(x,x+2);
+                </code>
+        </pre>
+        <p>方法有一个很重要的属性，在方法主体内部，关键字this的值变成了调用该方法的对象。</p>
+    </li>
+    <li>
+        <pre>
+            <code style="color: #333333">
+                function compute_area()
+                {
+                    return this.width * this.height;
+                }
+            </code>
+        </pre>
+    </li>
+
+
+</ul>
 </body>
 </html>
