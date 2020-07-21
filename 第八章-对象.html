@@ -22,9 +22,124 @@
                     var now = new Date();
                     var new_years_eve = new Date(2020,11,31);
                 </code>
-
+            备注：定义自定义构造函数以任何希望方式初始化新创建对象都是可能的。
+                <code>
+                    var circle = { x:0, y:0, radius:2 };
+                    var homer = {
+                        name:'Homer Simpson',
+                        age:34,
+                        married:true,
+                    }
+                </code>
         </pre>
     </li>
 </ul>
+
+<hr/>
+<p><b>8.1.2 属性的设置和查询</b></p>
+<ul>
+    <li>对象的创建
+        <pre>
+                <code style="color: #333333">
+                    var book = new Object();
+                    book.title = 'javascript ::::';
+
+                        //设置多层嵌套对象
+                    book.chapter1 = new Object();
+                    book.chapter1.title = 'Introduction to javascript!'
+                    book.chapter1.page = 19;
+                    book.chapter2 = { title: 'Lexical Structure', page: 6 };
+
+                    console.log(chapter1);
+                    console.log(chapter2);
+                </code>
+        </pre>
+    </li>
+
+</ul>
+
+<hr/>
+<p><b>8.1.3 属性的枚举</b></p>
+<ul>
+    <li>对象的创建
+        <pre>
+                <code style="color: #333333">
+                    function DisplayPropertyNames(obj){
+                        var names = '';
+                        for (var name in obj) name += name + '\n';
+                        console.log(names);
+                    }
+                </code>
+        </pre>
+    </li>
+
+</ul>
+
+<hr/>
+<p><b>8.1.4 未定义的属性</b></p>
+<ul>
+    <li>对象的创建
+        <pre>
+                <code style="color: #333333">
+                    //使用运算符删除一个对象的属性
+                    delete book.chapter2;
+                </code>
+        </pre>
+    </li>
+
+</ul>
+
+<hr/>
+<h2>8.2构造函数</h2>
+<hr/>
+<p><b>8.2 </b></p>
+<ul>
+    <li>要创建已经定义过的带有属性（如width、height）的对象，需要编造一个构造函数，在新的对象中创建并初始化这些属性。构造函数是具有两个特性的JavaScript函数：
+        <ul>
+            <li>由new运算符调用</li>
+            <li>传递给他的是一个对新创建的空对象的引用，将该引用作为关键字this的值，而且他还要对新创建的对象进行适当的初始化</li>
+        </ul>
+        <pre>
+                <code style="color: #333333">
+                    //Rectangle对象的构造函数
+                    fuction Rectangle(w,h){
+                        this.width = w;
+                        this.height = h;
+                    }
+                    var rect1 = new Rectangle(2,4);
+                    var rect2 = new Rectangle(8.5,11);
+                </code>
+        </pre>
+        <p>构造函数通常没有返回值，他们只是初始化由This值传递进来的对象</p>
+    </li>
+</ul>
+<hr/>
+<p><b>8.3 方法 </b></p>
+<ul>
+    <li>
+        通过对象调用的JavaScript函数，即为方法。<br>
+        如果有一个函数f和对象o，可以如此定义一个名为m的方法：
+        <pre>
+                <code style="color: #333333">
+                    //定义方法
+                    o.m = f;
+                    //调用方法
+                    o.m()或o.m(x,x+2);
+                </code>
+        </pre>
+        <p>方法有一个很重要的属性，在方法主体内部，关键字this的值变成了调用该方法的对象。</p>
+    </li>
+    <li>
+        <pre>
+            <code style="color: #333333">
+                function compute_area()
+                {
+                    return this.width * this.height;
+                }
+            </code>
+        </pre>
+    </li>
+</ul>
+
 </body>
 </html>
