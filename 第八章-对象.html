@@ -175,7 +175,88 @@
 <hr/>
 <p><b>8.5 面向对象的JavaScript </b></p>
 <ul>
+    <li>JavaScript中任何对象都是实例属性</li>
+    <li>实例方法是由特定的实例调用的
+        <ul>
+            <li>实例方法都使用关键字this来引用要操作的对象或实例</li>
+            <li></li>
+        </ul>
+    </li>
+    <li>类属性：Number.MAX_value
+        <p>创造一个类属性存储数学常量π：circle.PI=3.14</p>
+    </li>
+    <li>类方法：Date.parse()</li>
+    <li>实例：
+        <ul>
+            <li>
+                <pre>
+                    //构造函数定义类自身
+                    function Circle(radius){
+                        this.r=radius
+                    }
+
+                    Circle.PI=3.14159;
+                    //计算面积
+                    function Circle_area(){
+                        return Circle.PI*this.r*this.r;
+                    }
+
+                    Circle.prototype.area = Circle_area;
+
+                    function Circle_max(a,b){
+                        if(a.r>b.r) return a;
+                        else return b;
+                    }
+                    Circle.max = Circle_max;
+
+                    var c=new Circle(1.0);
+                    c.r=2.2;
+                    var a=c.area();
+                    var x=Math.exp(CirC;e.PI);
+                    var d=new Circle(1.2);
+                    var bigger=Circle.max(c,d);
+                </pre>
+            </li>
+
+            <li> 复数  </li>
+            <li> 超类和子类  </li>
+
+        </ul>
+    </li>
+</ul>
+
+<p><b>8.6 作为关联数组的对象 </b></p>
+<p><b>8.7 对象的属性和方法 </b></p>
+<ul>
+    <li>constructor属性</li>
+    <li>toString()方法：返回字符串</li>
+    <li>toLocaleString()方法：返回对象局部化的字符串表示</li>
+    <li>valueof()方法：将一个对象转换成字符串之外的原始类型，优先级高于ToString（）</li>
+    <li>toLocaleString()方法：返回对象局部化的字符串表示</li>
+    <li>hasOwnProperty()方法：非继承的属性如果有一个实际参数存在，则true，反之false
+        <pre>
+            var o= new Object();
+            o.hasOwnProperty('undef'); //false
+            Math.hasOwnProperty('cos');//true
+        </pre>
+    </li>
+
+    <li>propertyIsEnumerable():类似constructor属性
+        <pre>
+                var o = new Object();
+                Object.prototype.isPrototypeOf(o);//true
+                Object.isPrototypeOf(o);//false
+                Object.prototypeOf(o);//true
+        </pre>
+
+
+    </li>
+</ul>
+<p><b>8.7 对象的属性和方法 </b></p>
+<ul>
     <li></li>
 </ul>
+
+
 </body>
 </html>
