@@ -12,10 +12,79 @@
 <hr/>
 <p><b>9.1 数组和数组元素</b></p>
 <ul>
-    <li>对象的创建
+    <li>数组的创建
         <pre>
                 <code style="color: #333333">
+            //无参数的调用
+                    //创建空数组
+                    var a = new Array();
+                    //创建带参数的数组
+                    var a = new Array(5,4,3,2,1,"testing,testing');
+                    //创建数组声明长度
+                    var a = new Array(10);
 
+                </code>
+                <code style="color: #333333">
+                    //读写数组
+                    value = a[0];
+                    a[1]=3.14;
+
+                </code>
+                <code style="color: #333333">
+                    //添加数组新元素
+                    a[10]=35;
+
+                </code>
+                <code style="color: #333333">
+                    //数组长度读取
+                    var = new Array();
+                    a=new Array(41);
+                    a.length=41;
+
+                </code>
+                <code style="color: #333333">
+                    //多维数组
+                    value = a[0];
+                    a[1]=3.14;
+
+                </code>
+        </pre>
+    </li>
+</ul>
+
+
+<p><b>9.2 数组的方法</b></p>
+<ul>
+    <li>join()方法
+        <pre>
+                <code style="color: #333333">
+                    var a = [1,2,3];
+                    //将数组所有元素转成字符串，然后连接起来
+                    var s = a.join(); //s="1,2,3";
+                    s = a.join(',');  //s="1, 2, 3"
+
+
+                </code>
+        </pre>
+    </li>
+
+    <li>reverse()方法
+        <pre>
+                <code style="color: #333333">
+                    var a = new Array(1,2,3);
+                    //将数组所有元素转成字符串，然后连接起来
+                    var s = a.reverse().join();  //s="3,2,1"
+                </code>
+        </pre>
+    </li>
+
+    <li>
+        sort()方法：
+        <pre>
+                <code style="color: #333333">
+                    var a = new Array(1,2,3);
+                    //将数组所有元素转成字符串，然后连接起来
+                    var s = a.reverse().join();  //s="3,2,1"
                 </code>
         </pre>
     </li>
