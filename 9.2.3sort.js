@@ -1,7 +1,7 @@
 /**
  * Create By admins on 2020/10/23.
  */
-
+//sort 数组排序
 var a= [33,4,1111,222];
 var b=['g','j','d','t','a'];
 var sort_1=a.sort();
