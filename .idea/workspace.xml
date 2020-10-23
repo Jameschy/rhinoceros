@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16eebeb-e83e-4e90-8c27-9bc164fb06c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/10RegExp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript权威指南(第6版).pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,14 +45,14 @@
         <counts>
           <entry key="html" value="3670" />
           <entry key="js" value="1895" />
-          <entry key="txt" value="74" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3670" />
           <entry key="JavaScript" value="1895" />
-          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="PLAIN_TEXT" value="90" />
         </counts>
       </usages-collector>
     </session>
@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/9.2.8unshift.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -81,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/9.2.9tostring.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/10RegExp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="510">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -161,11 +161,6 @@
               <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
-              <item name="案例集合" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -180,6 +175,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\rhinoceros" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\rhinoceros" />
     </key>
@@ -212,7 +210,7 @@
       <workItem from="1595398713036" duration="599000" />
       <workItem from="1600224133844" duration="2960000" />
       <workItem from="1603078746908" duration="11553000" />
-      <workItem from="1603422835190" duration="15854000" />
+      <workItem from="1603422835190" duration="16345000" />
     </task>
     <task id="LOCAL-00001" summary="重新学习，第八章！">
       <created>1590471285958</created>
@@ -277,17 +275,24 @@
       <option name="project" value="LOCAL" />
       <updated>1603441835369</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="第十章正则处理！">
+      <created>1603449206947</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603449206947</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42997000" />
+    <option name="totallyTimeSpent" value="43488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2008547" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2905983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -299,7 +304,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.524644" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31106243" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -346,7 +351,8 @@
     <MESSAGE value="第九章使用node运行js测试！" />
     <MESSAGE value="第九章数组方法学完，splice没明白！" />
     <MESSAGE value="第九章数组方法学完，splice没全懂！" />
-    <option name="LAST_COMMIT_MESSAGE" value="第九章数组方法学完，splice没全懂！" />
+    <MESSAGE value="第十章正则处理！" />
+    <option name="LAST_COMMIT_MESSAGE" value="第十章正则处理！" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -466,21 +472,21 @@
     <entry file="file://$PROJECT_DIR$/9.2.8unshift.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/9.2.9tostring.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10RegExp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="510">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
