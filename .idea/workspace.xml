@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16eebeb-e83e-4e90-8c27-9bc164fb06c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/9.2.5slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.2.6splice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.2.7pushpop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.2.8unshift.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.2.9tostring.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10RegExp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.2.3sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/9.2.3sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.2.4concat.js" beforeDir="false" afterPath="$PROJECT_DIR$/9.2.4concat.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,29 +30,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="7" />
-          <entry key="js" value="7" />
+          <entry key="js" value="8" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="7" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="3670" />
-          <entry key="js" value="1432" />
-          <entry key="txt" value="53" />
+          <entry key="js" value="1895" />
+          <entry key="txt" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3670" />
-          <entry key="JavaScript" value="1432" />
-          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="JavaScript" value="1895" />
+          <entry key="PLAIN_TEXT" value="74" />
         </counts>
       </usages-collector>
     </session>
@@ -83,11 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/9.2.9tostring.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10RegExp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -125,6 +128,8 @@
         <option value="$PROJECT_DIR$/unshift.js" />
         <option value="$PROJECT_DIR$/9.2.8unshift.js" />
         <option value="$PROJECT_DIR$/9.2.9tostring.js" />
+        <option value="$PROJECT_DIR$/案例集合/10RegExp.js" />
+        <option value="$PROJECT_DIR$/10RegExp.js" />
       </list>
     </option>
   </component>
@@ -155,6 +160,11 @@
             <path>
               <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
+              <item name="案例集合" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,7 +212,7 @@
       <workItem from="1595398713036" duration="599000" />
       <workItem from="1600224133844" duration="2960000" />
       <workItem from="1603078746908" duration="11553000" />
-      <workItem from="1603422835190" duration="11277000" />
+      <workItem from="1603422835190" duration="15854000" />
     </task>
     <task id="LOCAL-00001" summary="重新学习，第八章！">
       <created>1590471285958</created>
@@ -260,17 +270,24 @@
       <option name="project" value="LOCAL" />
       <updated>1603425305588</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="第九章数组方法学完，splice没全懂！">
+      <created>1603441835369</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603441835369</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38420000" />
+    <option name="totallyTimeSpent" value="42997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2008547" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2008547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -327,7 +344,9 @@
     <MESSAGE value="第九章笔记创建！201019" />
     <MESSAGE value="第九章笔记更新！201020" />
     <MESSAGE value="第九章使用node运行js测试！" />
-    <option name="LAST_COMMIT_MESSAGE" value="第九章使用node运行js测试！" />
+    <MESSAGE value="第九章数组方法学完，splice没明白！" />
+    <MESSAGE value="第九章数组方法学完，splice没全懂！" />
+    <option name="LAST_COMMIT_MESSAGE" value="第九章数组方法学完，splice没全懂！" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -455,6 +474,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10RegExp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>
