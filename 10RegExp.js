@@ -24,3 +24,30 @@ var quote=/"([^"]*)"/g;
 var xx=text.replace(quote,"``$1''")
 console.log(xx);
 
+var url = /(\w+):\/\/([\w.]+)\/(\S*)/;
+var text = "Visit my Blog at http://www.example.com/~david";
+var result = text.match(url);
+
+if (result!=null){
+    var fullurl=result[0];
+    console.log(fullurl);
+
+    var protocol=result[1];
+    console.log(protocol);
+
+    var host =result[2];
+    console.log(host);
+
+    var path =result[3];
+    console.log(path);
+
+    console.log(result);
+}
+
+
+var str = "1,2,3,4,5,6";
+
+var txts=str.split(/\s*,\s*/);
+console.log(txts);
+
+
