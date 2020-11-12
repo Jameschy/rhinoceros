@@ -63,57 +63,49 @@ input:focus, select:focus, textarea:focus {
 /*Pub-自定义*/
 
     /*背景颜色*/
-.bg-blue{}
-.bg-dark{}
-.bg-green{}
-.bg-grey{}
-.bg-orange{}
-.bg-pink{}
-.bg-red{}
-.bg-yellow{}
+.bg-blue{color: #00A0E8;}
+.bg-dark{color: #000000;}
+.bg-green{color: #7ca934;}
+.bg-grey{color: #aaaaaa;}
+.bg-orange{color: #e66d15;}
+.bg-pink{color: #ffd9d9;}
+.bg-red{color: #dd4343;}
+.bg-yellow{color: #f8bc06;}
 
     /*字体颜色*/
-.c-blue{}
-.c-dark{}
-.c-green{}
-.c-grey{}
-.c-orange{}
-.c-pink{}
-.c-red{}
-.c-yellow{}
+.c-blue{background-color: #00A0E8;}
+.c-dark{background-color: #000000;}
+.c-green{background-color: #7ca934;}
+.c-grey{background-color: #aaaaaa;}
+.c-orange{background-color: #e66d15;}
+.c-pink{background-color: #ffd9d9;}
+.c-red{background-color: #dd4343;}
+.c-yellow{background-color: #f8bc06;}
 
     /*限宽*/
-.max-w960{max-width: 960px;}
-.max-w1000{max-width: 1000px;}
-.max-w1200{max-width: 1200px}
+.max-w960{max-width: 960px;width: auto;}
+.max-w1000{max-width: 1000px;width: auto;}
+.max-w1200{max-width: 1200px;width: auto;}
 
     /*浮动*/
 .fl-r{float: right;}
 .fl-l{float: left;}
 .fl-n{float: none;}
-.fl-c:after{
-    content: "";
-    display: block;
-    height: 0;
-    clear:both;
-    visibility: hidden;
-}
-.fl-c{
-    *zoom: 1;
-}
+.fl-c:after{content: "";display: block;height: 0;clear:both;visibility: hidden;}
+.fl-c{*zoom: 1;}
 
-
+    /*文本属性*/
 .fs-s{font-size: 12px;}
 .fs-m{font-size: 16px;}
 .fs-l{font-size: 24px;}
-.fw-l{font-weight: lighter;}
-.fw-b{font-weight: bold;}
+.fw-l{font-weight: 200;}
+.fw-b{font-weight: 700;}
 
     /*属性转换*/
-.dis-no{display: none;}
+.dis-n{display: none;}
+.dis-b{display: block;}
+.dis-f{display: flex;}
 .dis-ib{display: inline-block;}
-.dis-bl{display: block;}
-.dis-fx{display: flex;}
 .dis-if{display: inline-flex;}
 
     /*边距*/
