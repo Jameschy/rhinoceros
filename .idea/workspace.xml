@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f16eebeb-e83e-4e90-8c27-9bc164fb06c7" name="Default Changelist" comment="11.6，catc/try从句">
-      <change afterPath="$PROJECT_DIR$/site.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text.html" afterDir="false" />
+    <list default="true" id="f16eebeb-e83e-4e90-8c27-9bc164fb06c7" name="Default Changelist" comment="11.6，catc/try从句2">
+      <change afterPath="$PROJECT_DIR$/mulu/pc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mulu/pc/static/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mulu/pc/static/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/present/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/x.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,41 +22,51 @@
     <session id="1473450974">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="10" />
-          <entry key="js" value="13" />
+          <entry key="css" value="6" />
+          <entry key="html" value="16" />
+          <entry key="js" value="14" />
           <entry key="md" value="2" />
+          <entry key="png" value="1" />
+          <entry key="txt" value="1" />
+          <entry key="下载" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="10" />
-          <entry key="JavaScript" value="13" />
+          <entry key="CSS" value="6" />
+          <entry key="HTML" value="16" />
+          <entry key="Image" value="1" />
+          <entry key="JavaScript" value="14" />
           <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="4833" />
+          <entry key="css" value="821" />
+          <entry key="html" value="5440" />
           <entry key="js" value="4246" />
-          <entry key="txt" value="142" />
+          <entry key="txt" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4833" />
+          <entry key="CSS" value="821" />
+          <entry key="HTML" value="5440" />
           <entry key="JavaScript" value="4246" />
-          <entry key="PLAIN_TEXT" value="142" />
+          <entry key="PLAIN_TEXT" value="143" />
         </counts>
       </usages-collector>
     </session>
@@ -61,85 +74,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第七章-函数.html">
+        <entry file="file://$PROJECT_DIR$/mulu/pc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2675">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="225">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第十一章-js子集.html">
+        <entry file="file://$PROJECT_DIR$/mulu/pc/static/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2500">
-              <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1850">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="3975">
+              <caret line="156" column="11" lean-forward="true" selection-start-line="156" selection-start-column="11" selection-end-line="156" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/site.html">
+        <entry file="file://$PROJECT_DIR$/mulu/pc/static/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/11.43yield.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/11.44arr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/案例集合/11.45simple.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/11.4for.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/11key.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="175">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -151,15 +107,23 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>StopInteration</find>
+      <find>http://www.eyu05.net</find>
+      <find>../images/</find>
+      <find>margin</find>
     </findStrings>
     <replaceStrings>
       <replace>StopIteration</replace>
+      <replace>http:</replace>
+      <replace>/</replace>
+      <replace>.bg-</replace>
+      <replace>padding</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -195,6 +159,15 @@
         <option value="$PROJECT_DIR$/第十一章-js子集.html" />
         <option value="$PROJECT_DIR$/text.html" />
         <option value="$PROJECT_DIR$/site.html" />
+        <option value="$PROJECT_DIR$/x.txt" />
+        <option value="$PROJECT_DIR$/qq/jquery在线客服_files/layout.css" />
+        <option value="$PROJECT_DIR$/kef/QQ在线客服jquery特效_files/layout.css" />
+        <option value="$PROJECT_DIR$/kef/QQ在线客服jquery特效.html" />
+        <option value="$PROJECT_DIR$/present/index0.html" />
+        <option value="$PROJECT_DIR$/present/index.html" />
+        <option value="$PROJECT_DIR$/mulu/pc/index.html" />
+        <option value="$PROJECT_DIR$/mulu/pc/static/common.css" />
+        <option value="$PROJECT_DIR$/mulu/pc/static/index.css" />
       </list>
     </option>
   </component>
@@ -210,9 +183,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -227,6 +201,24 @@
               <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
+              <item name="mulu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
+              <item name="mulu" type="462c0819:PsiDirectoryNode" />
+              <item name="pc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhinoceros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhinoceros" type="462c0819:PsiDirectoryNode" />
+              <item name="mulu" type="462c0819:PsiDirectoryNode" />
+              <item name="pc" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -236,14 +228,16 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/404.html" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\rhinoceros\kef\images" />
       <recent name="E:\rhinoceros" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\rhinoceros" />
     </key>
   </component>
@@ -258,6 +252,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/rhinoceros/present/index.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -276,7 +280,8 @@
       <workItem from="1600224133844" duration="2960000" />
       <workItem from="1603078746908" duration="11553000" />
       <workItem from="1603422835190" duration="38837000" />
-      <workItem from="1604287343733" duration="602000" />
+      <workItem from="1604287343733" duration="7318000" />
+      <workItem from="1605147658476" duration="7754000" />
     </task>
     <task id="LOCAL-00001" summary="重新学习，第八章！">
       <created>1590471285958</created>
@@ -369,16 +374,24 @@
       <option name="project" value="LOCAL" />
       <updated>1603708281790</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="11.6，catc/try从句2">
+      <created>1604288680817</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604288680817</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66582000" />
+    <option name="totallyTimeSpent" value="81052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11275026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11275026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -390,7 +403,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.38828632" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2559653" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -441,7 +454,8 @@
     <MESSAGE value="上传新书" />
     <MESSAGE value="11.43开始的生成器yield！" />
     <MESSAGE value="11.6，catc/try从句" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.6，catc/try从句" />
+    <MESSAGE value="11.6，catc/try从句2" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.6，catc/try从句2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -550,23 +564,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1850">
           <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/11.43yield.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/11.44arr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -580,21 +591,101 @@
     <entry file="file://$PROJECT_DIR$/11.4for.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1900">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/11key.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="361">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kef/QQ/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qq/jquery在线客服_files/kefu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qq/jquery在线客服_files/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret column="37493" selection-start-column="37493" selection-end-column="37493" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kef/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kef/QQ/common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kef/QQ/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret column="2549" selection-start-column="2549" selection-end-column="2549" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kef/images/suspend.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qq/jquery在线客服.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/present/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mulu/pc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mulu/pc/static/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3975">
+          <caret line="156" column="11" lean-forward="true" selection-start-line="156" selection-start-column="11" selection-end-line="156" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mulu/pc/static/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

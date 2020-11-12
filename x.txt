@@ -1,0 +1,12 @@
+update [!db.pre!]ecms_game set morepic=replace(morepic,'https:', 'http:');
+update [!db.pre!]ecms_game set titlepic=replace(titlepic,'https:', 'http:');
+update [!db.pre!]ecms_game set sytj=replace(sytj,'https:', 'http:');
+update [!db.pre!]ecms_game set fmhd=replace(fmhd,'https:', 'http:');
+update [!db.pre!]ecms_game_data_1 set newstext=replace(newstext,'https:', 'http:');
+update [!db.pre!]ecms_soft set morepic=replace(morepic,'https:', 'http:');
+update [!db.pre!]ecms_soft set titlepic=replace(titlepic,'https:', 'http:');
+update [!db.pre!]ecms_soft set fmhd=replace(fmhd,'https:', 'http:');
+update [!db.pre!]ecms_soft_data_1 set newstext=replace(newstext,'https:', 'http:');
+update [!db.pre!]enewszt set ztimg=replace(ztimg,'https:', 'http:');
+update [!db.pre!]ecms_news set titlepic=replace(titlepic,'https:', 'http:');
+update [!db.pre!]ecms_news_data_1 set newstext=replace(newstext,'https:', 'http:');
