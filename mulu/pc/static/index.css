@@ -167,3 +167,134 @@
 .banner-kf{
     display: inline-block;
 }
+
+    /*主体*/
+.ml-main{
+    width: 1200px;
+    height: 1815px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.main-c{
+    width: 100%;
+    margin: 15px auto;
+    box-shadow: 0 0 8px #ccc;
+}
+.mc-box{
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+    border-bottom: 1px dashed #eee;
+}
+.mc-title{
+    float: left;
+    width: 15%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #de1f2c;
+    vertical-align: initial;
+    /*background-color: #d5d9dc;*/
+}
+
+.title-icon{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    margin-right: 6px;
+    border: 1px solid #e2e2e2;
+    background: #de1f2c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.mc-bd{
+    width: 84.5%;
+    float: left;
+    /*background-color: #aaaaaa;*/
+}
+.mc-bd ul{
+    overflow: hidden;
+    margin: 5px 0 5px 12px;
+}
+.mc-bd ul li{
+    display: inline-block;
+    width: 150px;
+    float: left;
+    line-height: 30px;
+}
+
+.mc-bd li a{
+    font-size: 14px;
+}
+
+.main-l{
+    width: 70.65%;
+    display: inline-block;
+    float: left;
+    /*height: 180px;*/
+    /*background-color: #aaaaaa;*/
+    box-shadow: 0 0 8px #ccc;
+}
+
+.main-r{
+    width: 28%;
+    display: inline-block;
+    float: right;
+    /*height: 180px;*/
+    /*background-color: #777777;*/
+    box-shadow: 0 0 8px #ccc;
+}
+
+.sec-box{
+    margin: 15px 15px;
+}
+
+.sec1-title{
+    margin: 5px 5px;
+}
+.sec-title span{
+    padding: 5px;
+    border-bottom: 2px solid #dd4343;
+}
+.sec-box ul li{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.lbox-bd li{
+    width: 110px;
+}
+
+.sec-box ul li:hover a{
+    color: #dd4343;
+}
+
+.sec-bd{
+    overflow: hidden;
+}
+.item-title{
+    width: 80px!important;
+    font-size: 16px;
+    color: #407cb8;
+}
+.item-more{
+    width: 75px!important;
+}
+
+.item-more a{
+    color: #dd4343;
+}
+
+.main-r {
+
+}

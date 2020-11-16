@@ -87,6 +87,9 @@ input:focus, select:focus, textarea:focus {
 .w1000{width: 1000px;margin: 0 auto;}
 .w1200{width: 1200px;margin: 0 auto;}
 
+.wp30{width: 300px;}
+.wp70{width: 900px;}
+
     /*弹性限宽*/
 .max-w960{max-width: 960px;width: auto;}
 .max-w1000{max-width: 1000px;width: auto;}
@@ -118,16 +121,20 @@ input:focus, select:focus, textarea:focus {
 .mrc-2{margin: 20px auto;}
 .mrc-h{margin: 15px auto;}
 
+.mrr-0{margin-right: 0px;}
 .mrr-1{margin-right: 10px;}
 .mrr-2{margin-right: 20px;}
 .mrr-h{margin-right: 15px;}
+.mrl-0{margin-left: 0px;}
 .mrl-1{margin-left: 10px;}
 .mrl-2{margin-left: 20px;}
 .mrl-h{margin-left: 15px;}
 
+.mrt-0{margin-top: 0px;}
 .mrt-1{margin-top: 10px;}
 .mrt-2{margin-top: 20px;}
 .mrt-h{margin-top: 15px;}
+.mrb-0{margin-bottom: 0px;}
 .mrb-1{margin-bottom: 10px;}
 .mrb-2{margin-bottom: 20px;}
 .mrb-h{margin-bottom: 15px;}
