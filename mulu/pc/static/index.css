@@ -5,9 +5,12 @@
 *@desc:首頁樣式表
 *@update:2020/11/12 18:25
 */
+.ml-wrap{
+    width: 100%;
+}
 .ml-header {
     width: 100%;
-
+    display: inline-table;
 }
 .header-box{
     height: 35px;
@@ -113,6 +116,10 @@
 }
 
 /*菜单*/
+.ml-nav{
+    display: table;
+    width: 100%;
+}
 .nav-center{
     height: 42px;
     margin: 0 auto;
@@ -170,7 +177,6 @@
 
     /*主体*/
 .ml-main{
-    width: 1200px;
     height: 1815px;
     margin: 0 auto;
     margin-top: 15px;
@@ -267,12 +273,12 @@
 .sec-box ul li{
     display: inline-block;
     float: left;
-    font-size: 14px;
-    line-height: 30px;
 }
 
 .lbox-bd li{
     width: 110px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .sec-box ul li:hover a{
@@ -297,4 +303,136 @@
 
 .main-r {
 
+}
+
+.info-box{
+     border-bottom: 1px dotted #d5d9dc;
+     margin: 5px auto;
+ }
+
+.info-box li{
+    font-size: 12px;
+    line-height: 25px;
+    padding: 25px 5px;
+}
+
+.info-title{
+    font-weight: 800;
+    text-align: center;
+    font-family: cursive;
+}
+
+.info-breif{
+    font-size: 13px;
+    /* font-style: italic; */
+    font-family: cursive;
+}
+
+.news-box{
+    /*border-bottom: 1px dotted #d5d9dc;*/
+    margin: 5px auto;
+}
+
+.news-box li{
+    font-size: 14px;
+    line-height: 30px;
+}
+.lbox2{
+    /*padding: 15px 15px;*/
+}
+.lbox2 .sec-box{
+
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 15px;
+}
+
+.lbox2 .lbox2-1,
+.lbox2 .lbox2-2{
+    width: 46%;
+}
+
+.lbox2 .lbox-bd .item-title{
+    width: 38px!important;
+    font-size: 14px;
+    text-align: center;
+}
+.lbox2 .lbox-bd .item-more{
+    width: 65px!important;
+}
+.lbox2 .lbox-bd p{
+    width: 285px;
+}
+
+.lbox2 .lbox-bd p:hover a{
+    color: #b4000d;
+}
+
+/*第二段右侧模块*/
+.rbox2{
+
+}
+
+.rbox2 .info-box{
+    padding: 15px 0;
+}
+
+.rbox2 .info-box li{
+    padding: 2px 5px;
+    margin: 5px 5px;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px;
+}
+
+.main-b{
+    box-shadow: 0 0 8px #ccc;
+}
+
+.main-b section{
+    padding: 15px;
+}
+
+.main-b ul li{
+    display: inline-flex;
+    margin: 5px 8px;
+}
+    /*页底*/
+.ml-footer{
+    width: 100%;
+    display: inline-table;
+    background-color: #333333;
+}
+
+.footer-1{
+    padding: 30px 0;
+}
+
+.bt-logo{
+    width: 20%;
+    text-align: left;
+}
+.bt-sitemsg{
+    width: 60%;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+.bt-qrcode{
+    width: 20%;
+    text-align: right;
+}
+
+.bt-sitemsg ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+.bt-sitemsg a{
+    color: #d5d9dc;
+}
+.bt-sitemsg p{
+    color: #d5d9dc;
+    font-size: 12px;
+    line-height: 20px;
 }
