@@ -1,0 +1,19 @@
+{
+  "name": "rhinoceros",
+  "version": "1.0.0",
+  "description": "o #xiniu\r ###犀牛学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jameschy/rhinoceros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jameschy/rhinoceros/issues"
+  },
+  "homepage": "https://github.com/Jameschy/rhinoceros#readme"
+}
