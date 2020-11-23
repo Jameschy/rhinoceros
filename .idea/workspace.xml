@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16eebeb-e83e-4e90-8c27-9bc164fb06c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mulu/pc/static/category.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mulu/pc/static/img/blogo_y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mulu/pc/static/img/favicon16.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mulu/pc/static/img/logo-x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mulu/pc/static/img/logo-xb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mulu/pc/mu-detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mulu/pc/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mulu/pc/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mulu/pc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mulu/pc/static/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/static/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mulu/pc/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/static/img/logobak.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mulu/pc/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mulu/pc/static/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/mulu/pc/static/detail.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +33,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="10" />
-          <entry key="html" value="18" />
+          <entry key="css" value="12" />
+          <entry key="html" value="20" />
           <entry key="js" value="14" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
@@ -52,8 +44,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="10" />
-          <entry key="HTML" value="18" />
+          <entry key="CSS" value="12" />
+          <entry key="HTML" value="20" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="14" />
           <entry key="Markdown" value="2" />
@@ -62,24 +54,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3197" />
-          <entry key="html" value="8302" />
+          <entry key="css" value="3390" />
+          <entry key="html" value="9044" />
           <entry key="js" value="4246" />
-          <entry key="txt" value="242" />
+          <entry key="txt" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3197" />
-          <entry key="HTML" value="8302" />
+          <entry key="CSS" value="3390" />
+          <entry key="HTML" value="9044" />
           <entry key="JavaScript" value="4246" />
-          <entry key="PLAIN_TEXT" value="242" />
+          <entry key="PLAIN_TEXT" value="273" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5105374">
+    <splitter split-orientation="horizontal" split-proportion="0.65012884">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -159,11 +151,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mulu/pc/category.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="466" column="56" lean-forward="true" selection-start-line="466" selection-start-column="56" selection-end-line="466" selection-end-column="56" />
+                <state relative-caret-position="25">
+                  <caret line="514" column="44" selection-start-line="514" selection-start-column="40" selection-end-line="514" selection-end-column="44" />
                   <folding>
                     <element signature="n#section#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#ul#0;n#section#0;n#aside#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -189,10 +181,33 @@
                     <element signature="n#div#0;n#li#9;n#ul#0;n#section#0;n#aside#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#section#0;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#ul#0;n#section#1;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#section#2;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#ul#0;n#section#0;n#aside#2;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#aside#2;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/mulu/pc/detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="235">
+                  <caret line="231" column="26" lean-forward="true" selection-start-line="231" selection-start-column="26" selection-end-line="231" selection-end-column="26" />
+                  <folding>
+                    <element signature="n#section#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#section#1;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#ul#0;n#section#1;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#section#4;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/mulu/pc/mu-detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="538">
+                  <caret line="217" column="38" lean-forward="true" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -219,11 +234,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mulu/pc/static/category.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="422" column="20" selection-start-line="422" selection-start-column="20" selection-end-line="422" selection-end-column="20" />
+                <state relative-caret-position="-1017">
+                  <caret line="423" column="1" lean-forward="true" selection-start-line="423" selection-start-column="1" selection-end-line="423" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/mulu/pc/static/detail.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -253,6 +277,10 @@
       <find>.ccc</find>
       <find>.bt-logo</find>
       <find>包</find>
+      <find>fl-r c-lblue</find>
+      <find>news-box</find>
+      <find>sec-box lbox1-1</find>
+      <find>贵南发生</find>
     </findStrings>
     <replaceStrings>
       <replace>StopIteration</replace>
@@ -306,7 +334,11 @@
         <option value="$PROJECT_DIR$/mulu/pc/index.html" />
         <option value="$PROJECT_DIR$/mulu/pc/static/common.css" />
         <option value="$PROJECT_DIR$/mulu/pc/static/category.css" />
+        <option value="$PROJECT_DIR$/mulu/pc/static/img/detail.css" />
         <option value="$PROJECT_DIR$/mulu/pc/category.html" />
+        <option value="$PROJECT_DIR$/mulu/pc/detail.html" />
+        <option value="$PROJECT_DIR$/mulu/pc/mu-detail.html" />
+        <option value="$PROJECT_DIR$/mulu/pc/static/detail.css" />
       </list>
     </option>
   </component>
@@ -373,14 +405,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\rhinoceros\mulu\pc\static" />
       <recent name="E:\rhinoceros\mulu\pc" />
       <recent name="E:\rhinoceros\kef\images" />
       <recent name="E:\rhinoceros" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\rhinoceros\mulu\pc" />
       <recent name="E:\rhinoceros\mulu\pc\static" />
       <recent name="E:\rhinoceros\mulu\pc\static\img" />
-      <recent name="E:\rhinoceros\mulu\pc" />
       <recent name="E:\rhinoceros" />
     </key>
   </component>
@@ -544,7 +577,7 @@
       <workItem from="1604287343733" duration="7318000" />
       <workItem from="1605147658476" duration="47339000" />
       <workItem from="1605777758884" duration="3556000" />
-      <workItem from="1605781641931" duration="11904000" />
+      <workItem from="1605781641931" duration="23548000" />
     </task>
     <task id="LOCAL-00001" summary="重新学习，第八章！">
       <created>1590471285958</created>
@@ -707,17 +740,31 @@
       <option name="project" value="LOCAL" />
       <updated>1605781121255</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="更新logo，编辑列表页ok">
+      <created>1605868247929</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1605868247929</updated>
+    </task>
+    <task id="LOCAL-00025" summary="新建detail表及模板文件">
+      <created>1606095621017</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606095621017</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136097000" />
+    <option name="totallyTimeSpent" value="147741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20231824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -728,8 +775,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.23535791" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23535791" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.1691974" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22557172" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -800,7 +847,9 @@
     <MESSAGE value="修复底部5px白边" />
     <MESSAGE value="修复提交仓库反复输入密码问题测试" />
     <MESSAGE value="修复提交仓库反复输入密码问题测试2" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复提交仓库反复输入密码问题测试2" />
+    <MESSAGE value="更新logo，编辑列表页ok" />
+    <MESSAGE value="新建detail表及模板文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建detail表及模板文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1101,15 +1150,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mulu/pc/static/category.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="422" column="20" selection-start-line="422" selection-start-column="20" selection-end-line="422" selection-end-column="20" />
+        <state relative-caret-position="-1017">
+          <caret line="423" column="1" lean-forward="true" selection-start-line="423" selection-start-column="1" selection-end-line="423" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mulu/pc/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="466" column="56" lean-forward="true" selection-start-line="466" selection-start-column="56" selection-end-line="466" selection-end-column="56" />
+        <state relative-caret-position="25">
+          <caret line="514" column="44" selection-start-line="514" selection-start-column="40" selection-end-line="514" selection-end-column="44" />
           <folding>
             <element signature="n#section#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#section#0;n#aside#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -1135,10 +1184,36 @@
             <element signature="n#div#0;n#li#9;n#ul#0;n#section#0;n#aside#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#section#1;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#section#0;n#aside#2;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#aside#2;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mulu/pc/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="231" column="26" lean-forward="true" selection-start-line="231" selection-start-column="26" selection-end-line="231" selection-end-column="26" />
+          <folding>
+            <element signature="n#section#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#section#1;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#4;n#aside#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mulu/pc/static/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mulu/pc/mu-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="217" column="38" lean-forward="true" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
         </state>
       </provider>
     </entry>
