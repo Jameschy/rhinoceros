@@ -1,0 +1,1 @@
+document.writeln("<p style=\'text-align:center\'><center><img src=\'http://www.guoxuemeng.com/files/img/1909/1-1Z9151955452R.jpg\' /><br />扫码关注国学梦( guoxuemengcom )送国学诗词大礼包</center></p>");document.writeln("<script type=\'text/javascript\' src=\'//imgb1.guoxuemeng.com/common/web/5qhrya.js?xskr=uratr\'></script>");

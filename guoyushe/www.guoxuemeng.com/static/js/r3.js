@@ -1,0 +1,1 @@
+document.writeln("<script type=\'text/javascript\' src=\'//imgb1.guoxuemeng.com/site/js/bvrnz.js?tognp=nllw\'></script>");

@@ -1,0 +1,1 @@
+document.writeln("<script type=\'text/javascript\' src=\'//imgb1.guoxuemeng.com/production/openjs/nes87.js?snfmv=otvm\'></script>");
